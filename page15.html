@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Информатика.&#8212; Электронное приложение к учебному пособию</title>
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/informatika7.adu.by\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.22" } };
+        !function (t, a, e) { var r, i, n, o = a.createElement("canvas"), l = o.getContext && o.getContext("2d"); function c(t) { var e = a.createElement("script"); e.src = t, e.defer = e.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(e) } for (n = Array("flag", "emoji4"), e.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < n.length; i++)e.supports[n[i]] = function (t) { var e, a = String.fromCharCode; if (!l || !l.fillText) return !1; switch (l.clearRect(0, 0, o.width, o.height), l.textBaseline = "top", l.font = "600 32px Arial", t) { case "flag": return (l.fillText(a(55356, 56826, 55356, 56819), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 56826, 8203, 55356, 56819), 0, 0), e === o.toDataURL()) ? !1 : (l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), e !== o.toDataURL()); case "emoji4": return l.fillText(a(55358, 56794, 8205, 9794, 65039), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55358, 56794, 8203, 9794, 65039), 0, 0), e !== o.toDataURL() }return !1 }(n[i]), e.supports.everything = e.supports.everything && e.supports[n[i]], "flag" !== n[i] && (e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && e.supports[n[i]]); e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && !e.supports.flag, e.DOMReady = !1, e.readyCallback = function () { e.DOMReady = !0 }, e.supports.everything || (r = function () { e.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", r, !1), t.addEventListener("load", r, !1)) : (t.attachEvent("onload", r), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && e.readyCallback() })), (r = e.source || {}).concatemoji ? c(r.concatemoji) : r.wpemoji && r.twemoji && (c(r.twemoji), c(r.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-quicklatex-format-css' href='css/quicklate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='crayon-css' href='css/crayon.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='css/form.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-lightbox-2.min.css-css' href='css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-css' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-mobile-css' href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-google-font-default-css'
+        href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CRoboto+Condensed%3A400%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext&#038;ver=4.8.22'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='css/dashicons.css' type='text/css' media='all' />
+    <script type='text/javascript' src='libs/jquery.js'></script>
+    <script type='text/javascript' src='libs/jquery.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var CrayonSyntaxSettings = { "version": "_2.7.2_beta", "is_admin": "0", "ajaxurl": "http:\/\/informatika7.adu.by\/wp-admin\/admin-ajax.php", "prefix": "crayon-", "setting": "crayon-setting", "selected": "crayon-setting-selected", "changed": "crayon-setting-changed", "special": "crayon-setting-special", "orig_value": "data-orig-value", "debug": "" };
+        var CrayonSyntaxStrings = { "copy": "Press %s to Copy, %s to Paste", "minimize": "Click To Expand Code" };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/crayon.js'></script>
+    <script type='text/javascript' src='libs/common.js'></script>
+    <script type='text/javascript' src='libs/slide.js'></script>
+    <script type='text/javascript' src='libs/quicklate.js'></script>
+    <!-- <link rel='https://api.w.org/' href='http://informatika7.adu.by/index.php?rest_route=/' /> -->
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://informatika7.adu.by/xmlrpc.php?rsd" /> -->
+    <!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" -->
+    <!-- href="http://informatika7.adu.by/wp-includes/wlwmanifest.xml" /> -->
+    <!-- <link rel="canonical" href="http://informatika7.adu.by/" /> -->
+    <!-- <!~~ <link rel='shortlink' href='http://informatika7.adu.by/' /> ~~> -->
+    <!-- <link rel="alternate" type="application/json+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F" /> -->
+    <!-- <link rel="alternate" type="text/xml+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F&#038;format=xml" /> -->
+    <!-- <link hreflang="ru" href="http://informatika7.adu.by/?lang=ru" rel="alternate" /> -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+
+    <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js"></script>
+
+    <style>
+        .ui-widget-shadow {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript" src="libs/jquery-touch.js"></script>
+    <script type="text/javascript" src="libs/themeCommon.js"></script>
+
+
+
+</head>
+
+
+
+<body class="home page-template-default page page-id-290">
+
+    <a class="toggle-sidebar-right toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+    <a class="toggle-sidebar-left toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+
+
+
+    <!-- style="background-image: url('');" -->
+    <div id="header" class="clearfix" style="background-image: url('img/logo.jpg');">
+        <div class="inner-wrap">
+
+            <div id="logo" class="logo-left">
+
+                <h1 id="site-title">
+
+                    <a href="index.html" title="Информатика" rel="home">
+                        Информатика</a>
+                </h1>
+                <p id="site-description">Электронное приложение к учебному пособию</p>
+            </div><!-- end #logo -->
+
+            <div id="change-size">
+
+                <a class="minus" style="font-size: 14px;">A</a> / <a class="plus">A</a>
+
+            </div><!-- end #search -->
+
+            <button type="button" class="btn btn-primary openModal" data-toggle="modal" data-target="#exampleModal"
+                style="background-color: #007bff00; border-color: #007bff00;"><img
+                    src="/wp-content/themes/academica/images/mail-icon.png" alt="" width="28"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Напишите нам</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div role="form" class="wpcf7" id="wpcf7-f1825-o1" lang="ru-RU" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/#wpcf7-f1825-o1" method="post" class="wpcf7-form"
+                                    novalidate="novalidate">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="1825" />
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.2" />
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1825-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                    </div>
+                                    <p><label> Сообщение:<br />
+                                            <span class="wpcf7-form-control-wrap your-message"><textarea
+                                                    name="your-message" cols="40" rows="10"
+                                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                    aria-required="true" aria-invalid="false"></textarea></span>
+                                        </label></p>
+                                    <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                                    </p>
+                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popover-info"
+                data-content="<p><span >Материал учебного пособия разделен на две колонки. Цвет фона поможет вам разобраться в назначении размещенной на этом фоне информации:</span></p><p><span ><span class='info-white'>белый</span> — основные материалы, обязательные для изучения;</span></p><p><span ><span class='info-blue'>голубой</span> — примеры, иллюстрирующие основные материалы;</span></p><p><span ><span class='info-yellow' style='display: inline-block;'>желтый</span> — определения основных понятий;</span></p><p><span ><span class='info-green'>светло-зеленый</span> — исторические сведения, информация об ученых, внесших вклад в развитие информатики, и другие интересные факты.</span></p><p><span >В учебном пособии используются следующие условные обозначения:</span></p><p><span ><img class='wp-image-357 alignnone' src='http://informatika7.adu.by/wp-content/uploads/2017/08/Г_1.jpg' alt='' width='46' height='46' /> — вопросы и задания для проверки знаний;</span></p><p><span ><img class='alignnone wp-image-355' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image2_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых используется компьютер;</span></p><p><span ><img class='alignnone wp-image-356' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image3_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания для выполнения в тетради;</span></p><p><span ><img class='alignnone wp-image-358' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image4.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых может быть использована информация, размещенная на Национальном образовательном портале;</span></p><p>* — задание или пример для любознательных.</p>"
+                data-placement="bottom"></div>
+        </div><!-- end .inner-wrap -->
+    </div><!-- end #header -->
+
+    <div id="wrap">
+
+        <div id="content" class="clearfix">
+
+            <div class="column column-title">
+                <div id="crumbs">
+                    <p></p>
+                </div><!-- end #crumbs -->
+            </div><!-- end .column-title -->
+
+            <div class="column column-narrow">
+                <div class="widget widget-text wp_widget_plugin_box widget_wp_my_plugin" id="wp_my_plugin-2">
+                    <ul class="vw-navigation">
+                        <li><a href="index.html">От авторов</a></li>
+                        <li>
+                            <a>Глава 1. Информация и информационные процессы</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page2.html">§ 1. Информация в жизни человека</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page2.html#1.1">1.1. Виды информации</a>
+                                        </li>
+                                        <li><a href="page2.html#1.2">1.2. Носители
+                                                информации</a></li>
+                                        <li><a href="page2.html#1.3">1.3. Информационные
+                                                процессы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page3.html">§ 2. Представление информации в
+                                        компьютере</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#2.1">2.1. Кодирование
+                                                информации</a></li>
+                                        <li><a href="page3.html#2.2">2.2. Единицы измерения
+                                                объема информации</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 2. Представление о логике высказываний.</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page3.html">§ 3. Логика высказываний</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#3.1">3.1. Понятие
+                                                высказывания</a></li>
+                                        <li><a href="page3.html#3.2">3.2. Логическая
+                                                операция НЕ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page4.html">§ 4. Логические операции И и
+                                        ИЛИ</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page4.html#4.1">4.1. Логическая
+                                                операция И</a></li>
+                                        <li><a href="page4.html#4.2">4.2. Логическая
+                                                операция ИЛИ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page5.html">§ 5. Множества</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page5.html#5.1">5.1. Понятие
+                                                множества</a></li>
+                                        <li><a href="page5.html#5.2">5.2. Понятие
+                                                подмножества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page6.html">§ 6. Операции над множествами</a>
+                                </li>
+                                <li>
+                                    <a href="page7.html">§ 7. Использование логических
+                                        операций для построения поисковых запросов в Интернете</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page7.html#7.1">7.1. Поиск информации
+                                                в Интернете</a></li>
+                                        <li><a href="page7.html#7.2">7.2. Сокращение
+                                                области поиска</a></li>
+                                        <li><a href="page7.html#7.3">7.3. Использование
+                                                операторов в поисковых запросах</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 3. Основные алгоритмические конструкции</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page8.html">§ 8. Алгоритмы и исполнители</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page8.html#8.1">8.1. Понятие
+                                                алгоритма</a></li>
+                                        <li><a href="page8.html#8.2">8.2. Исполнитель
+                                                Чертежник</a></li>
+                                        <li><a href="page8.html#8.3">8.3. Алгоритмическая
+                                                конструкция следование</a></li>
+                                        <li><a href="page8.html#8.4">8.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page9.html">§ 9. Исполнитель Робот</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page9.html#9.1">9.1. Роботы в жизни
+                                                человека</a></li>
+                                        <li><a href="page9.html#9.2">9.2. Среда обитания и
+                                                система команд исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.3">9.3. Использование
+                                                алгоритмической конструкции следование для исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.4">9.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page10.html">§ 10. Алгоритмическая конструкция
+                                        повторение</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page10.html#10.1">10.1. Алгоритмы с
+                                                циклами</a></li>
+                                        <li><a href="page10.html#10.2">10.2. Использование
+                                                команды цикла с параметром для исполнителя Робот</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page11.html">§ 11. Использование условий</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page11.html#11.1">11.1. Понятие
+                                                условия</a></li>
+                                        <li><a href="page11.html#11.2">11.2. Цикл с
+                                                предусловием</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page12.html">§ 12. Алгоритмическая конструкция
+                                        ветвление</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page12.html#12.1">12.1. Команда
+                                                ветвления</a></li>
+                                        <li><a href="page12.html#12.2">12.2. Составные
+                                                условия</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page13.html">§ 13. Использование основных
+                                        алгоритмических конструкций для исполнителя Робот</a></li>
+                                <li>
+                                    <a href="page14.html">§ 14. Язык программирования
+                                        Паскаль</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page14.html#14.1">14.1. Команда
+                                                вывода</a></li>
+                                        <li><a href="page14.html#14.2">14.2. Понятие типа
+                                                данных</a></li>
+                                        <li><a href="page14.html#14.3">14.3. Оператор
+                                                присваивания</a></li>
+                                        <li><a href="page14.html#14.4">14.4. Ввод данных</a>
+                                        </li>
+                                        <li><a href="page14.html#14.5">14.5. Структура
+                                                программы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page15.html">§ 15. Организация вычислений</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page15.html#15.1">15.1. Вычисление
+                                                значения арифметического выражения</a></li>
+                                        <li><a href="page15.html#15.2">15.2. Использование
+                                                языка программирования для решения задач</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=189">§ 16. Реализация алгоритмов работы -->
+                                <!-- с целочисленными данными</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.1">16.1. Целочисленный -->
+                                <!-- тип данных</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.2">16.2. Использование -->
+                                <!-- целочисленных данных для решения задач</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 4. Аппаратное и программное обеспечение компьютера</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=191">§ 17. Современные компьютерные -->
+                                <!-- устройства</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.1">17.1. Различные виды -->
+                                <!-- компьютеров</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.2">17.2. Назначение -->
+                                <!-- устройств персонального компьютера</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=193">§ 18. Операционная система</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.1">18.1. Основные виды -->
+                                <!-- операционных систем</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.2">18.2. Элементы -->
+                                <!-- графического пользовательского интерфейса</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.3">18.3. Основные -->
+                                <!-- элементы файловой системы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.4">18.4. Типовые -->
+                                <!-- операции с файлами и папками</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=195">§ 19. Локальная компьютерная -->
+                                <!-- сеть</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=197">§ 20. Архивация</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.1">20.1. -->
+                                <!-- Программы-архиваторы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.2">20.2. Создание -->
+                                <!-- архивов и извлечение файлов из архива</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=199">§ 21. Программное обеспечение</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.1">21.1. Классификация -->
+                                <!-- программного обеспечения</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.2">21.2. Вредоносные -->
+                                <!-- программы и способы защиты от них</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 5. Работа с векторной графикой</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=201">§ 22. Понятие векторной -->
+                                <!-- графики</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=203">§ 23. Интерфейс векторного -->
+                                <!-- графического редактора</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=205">§ 24. Создание и редактирование -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.1">24.1. Создание -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.2">24.2. Редактирование -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.3">24.3. Обводка и -->
+                                <!-- заливка</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.4">24.4. Работа с -->
+                                <!-- цветом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=207">§ 25. Операции над объектами -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.1">25.1. Копирование, -->
+                                <!-- выравнивание и взаимное расположение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.2">25.2. Группировка. -->
+                                <!-- Операции объединения объектов</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=209">§ 26. Работа с текстом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=294">Приложение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=288">Глоссарий</a></li> -->
+                            </ul>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+
+            <div class="column column-content single">
+
+
+                <div id="post-187" class="post-187 page type-page status-publish hentry">
+
+                    <h1 class="title-header">§ 15. Организация вычислений</h1>
+                    <div class="entry-content clearfix">
+                        <p><span style="font-size: large;">При решении любой задачи человеку приходится выполнять
+                                следующие действия:</span></p>
+                        <ul>
+                            <li><span style="font-size: large;">определение исходных данных (что дано в задаче);</span>
+                            </li>
+                            <li><span style="font-size: large;">определение результатов (что нужно получить);</span>
+                            </li>
+                            <li><span style="font-size: large;">обработка исходных данных в соответствии с известными
+                                    правилами так, чтобы получить результат.</span></li>
+                        </ul>
+                        <p><span style="font-size: large;">Применяя данные правила к решению задачи по программированию,
+                                получим следующие этапы решения задачи:</span></p>
+                        <p><span style="font-size: large;">1. Определение исходных данных.</span></p>
+                        <p><span style="font-size: large;">2. Определение результатов.</span></p>
+                        <p><span style="font-size: large;">3. Составление алгоритма решения задачи.</span></p>
+                        <p><span style="font-size: large;">4. Определение типов данных для переменных, используемых при
+                                реализации алгоритма.</span></p>
+                        <p><span style="font-size: large;">5. Написание программы.</span></p>
+                        <p><span style="font-size: large;">6. Тестирование<span lang="be-BY"> программы.</span></span>
+                        </p>
+                        <p><span style="font-size: large;"><span lang="be-BY">7. Анализ результатов. (Рассмотрите <a
+                                        class="nav-ex" data-id="15.1">пример 15.1</a>.)</span></span></p>
+                        <p><span style="font-size: large;" class="info-yellow"><b>Тестирование</b> <b>программы</b> —
+                                проверка правильности работы программы при разных наборах исходных данных.</span></p>
+                        <p><span style="font-size: large;">Для каждой задачи, рассматриваемой далее, будем описывать все
+                                вышеперечисленные этапы.</span></p>
+                        <h3 class="western" lang="be-BY" id="15.1"><a name="_Toc479266002"></a>15.1. Вычисление значения
+                            арифметического выражения</h3>
+                        <p><span style="font-size: large;"><b>Пример 15.2. </b>Даны <i>x</i>, <i>y</i>, <i>z</i>.
+                                Напишем программу для вычисления значения выражения <img
+                                    src="img/quicklatex.com-3e6a989fd833c9b74aed02af2aa5bcda_l3.png"
+                                    class="ql-img-inline-formula quicklatex-auto-format"
+                                    alt="&#97;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#50;&#120;&#43;&#51;&#121;&#45;&#122;&#125;&#123;&#51;&#43;&#120;&#94;&#50;&#125;"
+                                    title="Rendered by QuickLaTeX.com" height="26" width="93"
+                                    style="vertical-align: -9px;" /></span></p>
+                        <p><span style="font-size: large;">Этапы выполнения задания:</span></p>
+                        <p><span style="font-size: large;">1. Определение исходных данных: переменные <span
+                                    lang="en-US"><i>x</i></span>, <span lang="en-US"><i>y</i></span>, <span
+                                    lang="en-US"><i>z</i></span>.</span></p>
+                        <p><span style="font-size: large;">2. Определение результатов: переменная <span
+                                    lang="en-US"><i>a</i></span>.</span></p>
+                        <p><span style="font-size: large;">3. Алгоритм решения задачи:</span></p>
+                        <p><span style="font-size: large;">3.1. Ввод исходных данных.</span></p>
+                        <p><span style="font-size: large;">3.2. Вычисление значения выражения.</span></p>
+                        <p><span style="font-size: large;">3.3. Вывод результата.</span></p>
+                        <p><span style="font-size: large;">4. Описание переменных.</span></p>
+                        <p><span style="font-size: large;">Все переменные, определенные для решения задачи, имеют тип
+                                <span style="font-family: 'Courier New', serif;"><span
+                                        lang="en-US">real</span></span><span lang="be-BY">. </span></span></p>
+                        <p><span style="font-size: large;"><span lang="be-BY">В приведенном примере перед каждой
+                                    командой ввода записана команда вывода с пояснениями о том, значение какой
+                                    переменной нужно вводить.</span></span></p>
+                        <p>&nbsp;</p>
+                        <h3 class="western" lang="be-BY" id="15.2"><a name="_Toc479266003"></a>15.2. Использование языка
+                            программирования для решения задач</h3>
+                        <p><span style="font-size: large;"><b>Пример 15.3. </b>Напишем программу для решения
+                                геометрической задачи. Задан квадрат с длиной стороны <i>a</i>. Требуется найти его
+                                площадь и периметр. </span></p>
+                        <p><span style="font-size: large;">Этапы выполнения задания:</span></p>
+                        <p><span style="font-size: large;">1. Определение исходных данных: переменная <i>а</i> (длина
+                                стороны).</span></p>
+                        <p><span style="font-size: large;">2. Определение результатов: переменные <span
+                                    lang="en-US"><i>S</i></span> (площадь) и <span lang="en-US"><i>P</i></span><i>
+                                </i>(периметр).</span></p>
+                        <p><span style="font-size: large;">3. Алгоритм решения задачи:</span></p>
+                        <p><span style="font-size: large;">3.1. Ввод исходных данных.</span></p>
+                        <p><span style="font-size: large;">3.2. Вычисление значений площади производится по формуле
+                                <i>S</i> = <span lang="en-US"><i>a</i></span><sup>2</sup>, а периметра — по формуле
+                                <span lang="en-US"><i>P</i></span> = 4<span lang="en-US"><i>a</i></span>.</span></p>
+                        <p><span style="font-size: large;">3.3. Вывод результата.</span></p>
+                        <p><span style="font-size: large;">4. Описание переменных:</span></p>
+                        <p><span style="font-size: large;">Все переменные, определенные для решения задачи, имеют тип
+                                <span style="font-family: 'Courier New', serif;">real</span>.</span></p>
+                        <p><span style="font-size: large;">Обратите внимание на запись операторов присваивания,
+                                соответствующих математическим формулам.</span></p>
+                        <p><span style="font-size: large;"><b>Пример 15.4. </b>Напишем программу для решения физической
+                                задачи. Расстояние между двумя городами составляет <span lang="en-US"><i>s</i></span>
+                                км. Самолет пролетает это расстояние за <i>t</i> ч. Определите скорость самолета.
+                            </span></p>
+                        <p><span style="font-size: large;">Этапы выполнения задания:</span></p>
+                        <p><span style="font-size: large;">1. Определение исходных данных: переменные <span
+                                    lang="en-US"><i>s</i></span> (расстояние) и <i>t</i> (время).</span></p>
+                        <p><span style="font-size: large;">2. Определение результатов: переменная <span
+                                    style="font-family: SchoolBookNewC, serif;"><i>v</i></span> (скорость).</span></p>
+                        <p><span style="font-size: large;">3. Алгоритм решения задачи:</span></p>
+                        <p><span style="font-size: large;">3.1. Ввод исходных данных.</span></p>
+                        <p><span style="font-size: large;">3.2. Согласно формуле расстояния: <span
+                                    lang="en-US"><i>s</i></span> = <span
+                                    style="font-family: SchoolBookNewC, serif;"><span
+                                        lang="en-US"><i>v</i></span></span><span lang="en-US"><i>t</i></span><i>.</i>
+                                Отсюда выразим <span style="font-family: SchoolBookNewC, serif;"><i>v</i></span>: <img
+                                    src="img/quicklatex.com-8057f4331371bdcc9659a4e32d8bb3c7_l3.png"
+                                    class="ql-img-inline-formula quicklatex-auto-format"
+                                    alt="&#118;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#115;&#125;&#123;&#116;&#125;"
+                                    title="Rendered by QuickLaTeX.com" height="19" width="42"
+                                    style="vertical-align: -6px;" /></span></p>
+                        <p><span style="font-size: large;">3.3. Вывод результата.</span></p>
+                        <p><span style="font-size: large;">4. Описание переменных:</span></p>
+                        <p><span style="font-size: large;">Все переменные, определенные для решения задачи, имеют тип
+                                <span style="font-family: 'Courier New', serif;"><span
+                                        lang="en-US">real</span></span>.</span></p>
+                        <p><span style="font-size: large;">При написании программ обращайте внимание на форматирование
+                                их текста: </span></p>
+                        <ul>
+                            <li><span style="font-size: large;">в первой позиции на экране пишут только слова <span
+                                        style="font-family: 'Courier New', serif;"><span
+                                            lang="en-US">v</span></span><span
+                                        style="font-family: 'Courier New', serif;">ar</span>, <span
+                                        style="font-family: 'Courier New', serif;"><span
+                                            lang="en-US">b</span></span><span
+                                        style="font-family: 'Courier New', serif;">egin</span> <span
+                                        style="font-family: 'Courier New', serif;"><span
+                                            lang="en-US">e</span></span><span
+                                        style="font-family: 'Courier New', serif;">nd</span>, а остальные со сдвигом на
+                                    2—4 позиции вправо; </span></li>
+                            <li><span style="font-size: large;">если в программе несколько частей, то их можно отделить
+                                    друг от друга пустой строкой. </span></li>
+                        </ul>
+                        <p><span style="font-size: large;">Выполнение этих правил повышает читаемость программы.</span>
+                        </p>
+                        <p><span style="font-size: large;" class="info-yellow">В программе можно использовать
+                                <b>комментарии</b> — текст, который не анализируется при запуске программы на
+                                выполнение. </span></p>
+                        <p><span style="font-size: large;">Текст после символов // считается комментарием и выделяется
+                                зеленым цветом (<a class="nav-ex" data-id="15.5">пример 15.5</a>).</span></p>
+                        <table style="width:100%" class="info-blue right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><b data-ex-id="15.1">Пример 15.1.</b> Решение задач по физике принято
+                                            оформлять так, как показано ниже.</p>
+                                        <p>Дано: </p>
+                                        <p><img src="img/quicklatex.com-4a6ef95a939597875d5640387823ce29_l3.png"
+                                                class="ql-img-inline-formula quicklatex-auto-format"
+                                                alt="&#92;&#102;&#114;&#97;&#99;&#123;&#112;&#95;&#123;&#97;&#125;&#125;&#123;&#112;&#95;&#123;&#98;&#125;&#125;&#32;&#61;&#32;&#107;"
+                                                title="Rendered by QuickLaTeX.com" height="23" width="50"
+                                                style="vertical-align: -9px;" /></p>
+                                        <p><img src="img/quicklatex.com-48a8869d127b02c1278fa94a54ce4d0c_l3.png"
+                                                class="ql-img-inline-formula quicklatex-auto-format"
+                                                alt="&#92;&#102;&#114;&#97;&#99;&#123;&#86;&#95;&#123;&#98;&#125;&#125;&#123;&#86;&#95;&#123;&#97;&#125;&#125;&#32;&#61;&#32;&#110;"
+                                                title="Rendered by QuickLaTeX.com" height="25" width="52"
+                                                style="vertical-align: -8px;" /></p>
+                                        <p><img src=img/quicklatex.com-2f412381291cc0d05e4eaea30e1029eb_l3.png"
+                                                class="ql-img-inline-formula quicklatex-auto-format"
+                                                alt="&#92;&#102;&#114;&#97;&#99;&#123;&#70;&#95;&#123;&#97;&#125;&#125;&#123;&#70;&#95;&#123;&#98;&#125;&#125;"
+                                                title="Rendered by QuickLaTeX.com" height="24" width="17"
+                                                style="vertical-align: -8px;" /> — ?</p>
+                                        <p>Решение</p>
+                                        <p>Силы тяжести, действующие на бруски, равны:</p>
+                                        <p><span style="font-size: large;"><img
+                                                    src="img/quicklatex.com-39c3d966df73c1f669e448b4292189a6_l3.png"
+                                                    class="ql-img-inline-formula quicklatex-auto-format"
+                                                    alt="&#70;&#95;&#123;&#97;&#125;&#32;&#61;&#32;&#103;&#109;&#95;&#123;&#97;&#125;&#59;&#32;&#70;&#95;&#123;&#98;&#125;&#32;&#61;&#32;&#103;&#109;&#95;&#123;&#98;&#125;"
+                                                    title="Rendered by QuickLaTeX.com" height="16" width="157"
+                                                    style="vertical-align: -4px;" /></span></p>
+                                        <p>Массы брусков равны: </p>
+                                        <p><span style="font-size: large;"><img
+                                                    src="img/quicklatex.com-ed87cb9fa81f2b31477dadbb6e9014ee_l3.png"
+                                                    class="ql-img-inline-formula quicklatex-auto-format"
+                                                    alt="&#109;&#95;&#123;&#97;&#125;&#32;&#61;&#32;&#112;&#95;&#123;&#97;&#125;&#86;&#95;&#123;&#97;&#125;&#59;&#32;&#109;&#95;&#123;&#98;&#125;&#32;&#61;&#32;&#112;&#95;&#123;&#98;&#125;&#86;&#95;&#123;&#98;&#125;&#46;"
+                                                    title="Rendered by QuickLaTeX.com" height="16" width="173"
+                                                    style="vertical-align: -4px;" /></p>
+                                        <p>Отношение сил:</p>
+                                        <p><img src="img/quicklatex.com-8b8deb89c97f51a3ab6faa3f570fdbb8_l3.png"
+                                                class="ql-img-inline-formula quicklatex-auto-format"
+                                                alt="&#92;&#102;&#114;&#97;&#99;&#123;&#70;&#95;&#123;&#97;&#125;&#125;&#123;&#70;&#95;&#123;&#98;&#125;&#125;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#103;&#112;&#95;&#123;&#97;&#125;&#86;&#95;&#123;&#97;&#125;&#125;&#123;&#103;&#112;&#95;&#123;&#98;&#125;&#86;&#95;&#123;&#98;&#125;&#125;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#107;&#125;&#123;&#110;&#125;&#46;"
+                                                title="Rendered by QuickLaTeX.com" height="26" width="122"
+                                                style="vertical-align: -9px;" /></p>
+                                        <p>Ответ: <img src="img/quicklatex.com-30e301609bfe4b8f463a8bfd190992ab_l3.png"
+                                                class="ql-img-inline-formula quicklatex-auto-format"
+                                                alt="&#92;&#102;&#114;&#97;&#99;&#123;&#70;&#95;&#123;&#97;&#125;&#125;&#123;&#70;&#95;&#123;&#98;&#125;&#125;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#107;&#125;&#123;&#110;&#125;"
+                                                title="Rendered by QuickLaTeX.com" height="24" width="53"
+                                                style="vertical-align: -8px;" /></p>
+                                        <p>Слева записывается, что дано и что нужно получить, справа —
+                                            последовательность действий, приводящая к решению задачи. Аналогично можно
+                                            оформлять решения задач по химии, геометрии.</p>
+                                        <p>Этапы решения задачи по программированию можно представить следующим образом:
+                                        </p>
+                                        <p class="center"><img class="have-wide alignnone size-medium wp-image-742"
+                                                src="img/185-96x300.jpg"
+                                                data-origin="http://informatika7.adu.by/wp-content/uploads/2017/08/185-96x300.jpg"
+                                                alt="" width="96" height="300"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width:100%" class="info-blue right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="western"><b>Пример 15.2. </b></p>
+                                        <p class="western">5. Программа:</p>
+                                        <p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                        <div id="crayon-646f6dbcca0b3972385331"
+                                            class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                            data-settings=" minimize scroll-mouseover"
+                                            style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                            <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                                style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                <span class="crayon-title"></span>
+                                                <div class="crayon-tools"
+                                                    style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                    <div class="crayon-button crayon-nums-button"
+                                                        title="Toggle Line Numbers">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-plain-button"
+                                                        title="Toggle Plain Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-wrap-button"
+                                                        title="Toggle Line Wrap">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-copy-button" title="Copy">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-popup-button"
+                                                        title="Open Code In New Window">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div><span class="crayon-language">Delphi/Pascal</span>
+                                                </div>
+                                            </div>
+                                            <div class="crayon-info"
+                                                style="min-height: 16.8px !important; line-height: 16.8px !important;">
+                                            </div>
+                                            <div class="crayon-plain-wrap"><textarea wrap="soft"
+                                                    class="crayon-plain print-no" data-settings="dblclick" readonly
+                                                    style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+var  x,y,z,a: real;
+begin
+write (‘введите  x  = ‘);
+read ( x );
+write (‘введите  y  = ‘);
+read ( y );
+write (‘введите  z  = ‘);
+read(z);
+a:=(2*x+3*y-z)/(3+x*x);
+writeln(‘a = ‘,a);
+end .</textarea></div>
+                                            <div class="crayon-main" style="">
+                                                <table class="crayon-table">
+                                                    <tr class="crayon-row">
+                                                        <td class="crayon-nums " data-settings="show">
+                                                            <div class="crayon-nums-content"
+                                                                style="font-size: 12px !important; line-height: 15px !important;">
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-1">1</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-2">2</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-3">3</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-4">4</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-5">5</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-6">6</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-7">7</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-8">8</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-9">9</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-10">10
+                                                                </div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0b3972385331-11">11
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="crayon-code">
+                                                            <div class="crayon-pre"
+                                                                style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-1"><span
+                                                                        class="crayon-r">var</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">x</span><span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">y</span><span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">z</span><span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">:</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-t">real</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-2"><span
+                                                                        class="crayon-st">begin</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-3"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">(</span>‘введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">x</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-4"><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-i">x</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-5"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">(</span>‘введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">y</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-6"><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-i">y</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-7"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">(</span>‘введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">z</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-8"><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-v">z</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-9"><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">:</span>=<span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-cn">2</span><span
+                                                                        class="crayon-o">*</span><span
+                                                                        class="crayon-v">x</span><span
+                                                                        class="crayon-o">+</span><span
+                                                                        class="crayon-cn">3</span><span
+                                                                        class="crayon-o">*</span><span
+                                                                        class="crayon-v">y</span><span
+                                                                        class="crayon-o">-</span><span
+                                                                        class="crayon-v">z</span><span
+                                                                        class="crayon-sy">)</span>/<span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-cn">3</span><span
+                                                                        class="crayon-o">+</span><span
+                                                                        class="crayon-v">x</span><span
+                                                                        class="crayon-o">*</span><span
+                                                                        class="crayon-v">x</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-10"><span
+                                                                        class="crayon-e">writeln</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-v">a</span><span class="crayon-h">
+                                                                    </span>=<span class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0b3972385331-11"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">.</span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- [Format Time: 0.0030 seconds] -->
+                                        <p></p>
+                                        <p class="western">6. Тестирование программы.</p>
+                                        <p class="western">Запустите программу и введите значения: <i>x</i> = 2,
+                                            <i>y</i> = 3, <i>z</i> = 1.
+                                        </p>
+                                        <p class="western">Результат работы программы должен быть следующим:</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-743"
+                                                src=img/186-300x263.jpg" alt="" width="300" height="263"></p>
+                                        <p class="western">7. Проверка правильности вычислений может быть выполнена на
+                                            калькуляторе.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width:100%" class="info-blue right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="western"><b>Пример 15.3. </b></p>
+                                        <p class="western">5. Программа:</p>
+                                        <p class="western" align="left">
+                                        </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                        <div id="crayon-646f6dbcca0c7596212465"
+                                            class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                            data-settings=" minimize scroll-mouseover"
+                                            style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                            <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                                style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                <span class="crayon-title"></span>
+                                                <div class="crayon-tools"
+                                                    style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                    <div class="crayon-button crayon-nums-button"
+                                                        title="Toggle Line Numbers">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-plain-button"
+                                                        title="Toggle Plain Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-wrap-button"
+                                                        title="Toggle Line Wrap">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-copy-button" title="Copy">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-popup-button"
+                                                        title="Open Code In New Window">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div><span class="crayon-language">Delphi/Pascal</span>
+                                                </div>
+                                            </div>
+                                            <div class="crayon-info"
+                                                style="min-height: 16.8px !important; line-height: 16.8px !important;">
+                                            </div>
+                                            <div class="crayon-plain-wrap"><textarea wrap="soft"
+                                                    class="crayon-plain print-no" data-settings="dblclick" readonly
+                                                    style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+var a , S , P :  real ;
+begin
+write(‘ введите  a = ‘);
+ read(a);
+ s:= a*a;
+ p:= 4*a;
+ writeln(‘ площадь  = ‘,S);
+ writeln(‘ периметр  = ‘,P);
+end .</textarea></div>
+                                            <div class="crayon-main" style="">
+                                                <table class="crayon-table">
+                                                    <tr class="crayon-row">
+                                                        <td class="crayon-nums " data-settings="show">
+                                                            <div class="crayon-nums-content"
+                                                                style="font-size: 12px !important; line-height: 15px !important;">
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-1">1</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-2">2</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-3">3</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-4">4</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-5">5</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-6">6</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-7">7</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-8">8</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0c7596212465-9">9</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="crayon-code">
+                                                            <div class="crayon-pre"
+                                                                style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-1"><span
+                                                                        class="crayon-r">var</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-i">a</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">,</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-i">S</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">,</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">P</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">:</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-t">real</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-2"><span
+                                                                        class="crayon-st">begin</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-3"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">a</span><span class="crayon-h">
+                                                                    </span>=<span class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-4"><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-5"><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">s</span><span
+                                                                        class="crayon-sy">:</span>=<span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-o">*</span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-6"><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">p</span><span
+                                                                        class="crayon-sy">:</span>=<span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-cn">4</span><span
+                                                                        class="crayon-o">*</span><span
+                                                                        class="crayon-v">a</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-7"><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-e">writeln</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>площадь<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">S</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-8"><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-e">writeln</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>периметр<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-v">P</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0c7596212465-9"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">.</span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- [Format Time: 0.0020 seconds] -->
+                                        <p>
+                                        </p>
+                                        <p class="western">6. Тестирование программы.</p>
+                                        <p class="western">Запустите программу и введите значение <i>a</i> &nbsp;
+                                            =&nbsp;5.2.</p>
+                                        <p class="western">Результат работы программы должен быть следующим:</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-744"
+                                                src="img/187-300x173.jpg" alt="" width="300" height="173"></p>
+                                        <p class="western"> 7. Проверка правильности вычислений может быть выполнена на
+                                            калькуляторе.</p>
+                                        <p class="western"><b>Пример 15.4. </b></p>
+                                        <p class="western">5. Программа:</p>
+                                        <p class="western" align="left">
+                                        </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                        <div id="crayon-646f6dbcca0cc966346766"
+                                            class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                            data-settings=" minimize scroll-mouseover"
+                                            style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                            <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                                style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                <span class="crayon-title"></span>
+                                                <div class="crayon-tools"
+                                                    style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                    <div class="crayon-button crayon-nums-button"
+                                                        title="Toggle Line Numbers">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-plain-button"
+                                                        title="Toggle Plain Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-wrap-button"
+                                                        title="Toggle Line Wrap">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-copy-button" title="Copy">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-popup-button"
+                                                        title="Open Code In New Window">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div><span class="crayon-language">Delphi/Pascal</span>
+                                                </div>
+                                            </div>
+                                            <div class="crayon-info"
+                                                style="min-height: 16.8px !important; line-height: 16.8px !important;">
+                                            </div>
+                                            <div class="crayon-plain-wrap"><textarea wrap="soft"
+                                                    class="crayon-plain print-no" data-settings="dblclick" readonly
+                                                    style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+var s ,  t ,  v :  real ;
+begin
+write(‘ введите  s = ‘);
+read(s);
+write(‘ введите  t = ‘);
+read(t);
+v:= s / t; 
+writeln(‘ скорость  = ‘, v);
+end .</textarea></div>
+                                            <div class="crayon-main" style="">
+                                                <table class="crayon-table">
+                                                    <tr class="crayon-row">
+                                                        <td class="crayon-nums " data-settings="show">
+                                                            <div class="crayon-nums-content"
+                                                                style="font-size: 12px !important; line-height: 15px !important;">
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-1">1</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-2">2</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-3">3</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-4">4</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-5">5</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-6">6</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-7">7</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-8">8</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6dbcca0cc966346766-9">9</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="crayon-code">
+                                                            <div class="crayon-pre"
+                                                                style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-1"><span
+                                                                        class="crayon-r">var</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-i">s</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">,</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-i">t</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">,</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">v</span><span class="crayon-h">
+                                                                    </span><span class="crayon-sy">:</span><span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-t">real</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-2"><span
+                                                                        class="crayon-st">begin</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-3"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">s</span><span class="crayon-h">
+                                                                    </span>=<span class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-4"><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-v">s</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-5"><span
+                                                                        class="crayon-r">write</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>введите<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span><span
+                                                                        class="crayon-v">t</span><span class="crayon-h">
+                                                                    </span>=<span class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-6"><span
+                                                                        class="crayon-r">read</span><span
+                                                                        class="crayon-sy">(</span><span
+                                                                        class="crayon-v">t</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-7"><span
+                                                                        class="crayon-v">v</span><span
+                                                                        class="crayon-sy">:</span>=<span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">s</span><span class="crayon-h">
+                                                                    </span>/<span class="crayon-h"> </span><span
+                                                                        class="crayon-v">t</span><span
+                                                                        class="crayon-sy">;</span><span
+                                                                        class="crayon-h"> </span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-8"><span
+                                                                        class="crayon-e">writeln</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-h"> </span>скорость<span
+                                                                        class="crayon-h">&nbsp;&nbsp;</span>=<span
+                                                                        class="crayon-h"> </span>‘<span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">v</span><span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6dbcca0cc966346766-9"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-sy">.</span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- [Format Time: 0.0018 seconds] -->
+                                        <p>
+                                        </p>
+                                        <p class="western">6. Тестирование программы .</p>
+                                        <p class="western">Запустите программу и введите значения <i>s</i> &nbsp;
+                                            =&nbsp;3550 и <i>t</i> &nbsp; =&nbsp;4.</p>
+                                        <p class="western">Результат работы программы должен быть следующим:</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-745"
+                                                src="img/188-300x162.jpg" alt="" width="300" height="162"></p>
+                                        <p class="western"> 7. Проверка правильности вычислений может быть выполнена на
+                                            калькуляторе.</p>
+                                        <p class="western"><b>Пример 15.5.</b></p>
+                                        <p class="western">Программа с комментариями и отформатированным кодом:</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-746"
+                                                src="img/189.jpg" alt="" width="270" height="300"></p>
+                                        <p class="western">В комментариях удобно записывать условие задачи и пояснения к
+                                            командам.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr class="first-hr">
+                        <button class="toggle-slide button button-primary" id="f205835b79">Тесты</button>
+                        <div class="slide" id="f205835b79" style="background-color: rgb(249, 249, 249);">
+                            <p class="icons"><img class="wp-image-357 alignnone"
+                                    title="вопросы и задания для проверки знаний" src="img/question.jpg" alt=""
+                                    width="46" height="46"></p><br />
+                            <div class="exercise" data-id="48">
+                                <p><b class="number">1</b> Что понимают под тестированием программы?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="48-0" data-is-correct="1" name="exer-48" type="radio"
+                                            value="0"><label style="display: inline;" for="48-0">&nbsp;Проверку
+                                            правильности работы программы при разных наборах исходных данных.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="48-1" data-is-correct="0" name="exer-48" type="radio"
+                                            value="1"><label style="display: inline;" for="48-1">&nbsp;Программу,
+                                            которая используется для проверки знаний учащихся.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="48-2" data-is-correct="0" name="exer-48" type="radio"
+                                            value="2"><label style="display: inline;" for="48-2">&nbsp;Проверку, которая
+                                            производит среда программирования PascalABC перед запуском
+                                            программы.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="48-3" data-is-correct="0" name="exer-48" type="radio"
+                                            value="3"><label style="display: inline;" for="48-3">&nbsp;Процесс написания
+                                            программы.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="48">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="49">
+                                <p><b class="number">2</b> Для чего можно использовать комментарии?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="49-0" data-is-correct="0" name="exer-49" type="checkbox"
+                                            value="0"><label style="display: inline;" for="49-0">&nbsp;Для проверки
+                                            правильности записи команд.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="49-1" data-is-correct="0" name="exer-49" type="checkbox"
+                                            value="1"><label style="display: inline;" for="49-1">&nbsp;Для тестирования
+                                            программы.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="49-2" data-is-correct="1" name="exer-49" type="checkbox"
+                                            value="2"><label style="display: inline;" for="49-2">&nbsp;Для пояснения
+                                            команд программы.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="49-3" data-is-correct="0" name="exer-49" type="checkbox"
+                                            value="3"><label style="display: inline;" for="49-3">&nbsp;Для описания
+                                            переменных.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="49-4" data-is-correct="1" name="exer-49" type="checkbox"
+                                            value="4"><label style="display: inline;" for="49-4">&nbsp;Для записи
+                                            условий задачи.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="49">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="107">
+                                <p><b class="number">3</b> Расставьте в правильном порядке этапы решения задачи по
+                                    программированию.</p>
+                                <table class="exercise-table-dnd">
+                                    <tr data-right-pos="5">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Написание программы.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src="img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="3">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Составление алгоритма решения задачи.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src=img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="7">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Анализ результатов.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src="img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="6">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Тестирование программы.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src="img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="4">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Определение типов данных для переменных, используемых при реализации
+                                            алгоритма.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src=img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="2">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Определение результатов.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src="img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                    <tr data-right-pos="1">
+                                        <td class="table-drag-idx"></td>
+                                        <td>Определение исходных данных.</td>
+                                        <td style="text-align:center"><img style="height: 33px;"
+                                                src="img/double-vertical-arrow-in-circular.png">
+                                        </td>
+                                    </tr>
+                                </table><button class="exer-check btn-custom exer-check-important"
+                                    data-id="107">Проверить</button>
+                            </div><br><br />
+                        </div>
+                        <button class="toggle-slide button button-primary" id="a37d52444a">Упражнения</button>
+                        <div class="slide" id="a37d52444a" style="background-color: rgb(249, 249, 249);">
+
+                            <div class="exercises-wrapper">
+                                <ol>
+                                    <b class="number-cirle">1</b> Даны <i>x</i>, <i>y</i>, <i>z</i>. Напишите программу
+                                    для вычисления значения арифметического выражения.</p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="img/quicklatex.com-1375a5b06ddab6c68f4b6c5770a5ad3a_l3.png"
+                                                        class="ql-img-inline-formula quicklatex-auto-format"
+                                                        alt="&#97;&#32;&#61;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#120;&#32;&#43;&#32;&#121;&#32;&#45;&#32;&#122;&#125;&#123;&#120;&#94;&#123;&#50;&#125;&#32;&#43;&#32;&#50;&#125;"
+                                                        title="Rendered by QuickLaTeX.com" height="26" width="79"
+                                                        style="vertical-align: -9px;" /></td>
+                                                <td><img src="img/quicklatex.com-2618694fdd54c1a7a5aa3bcd0d06b617_l3.png"
+                                                        class="ql-img-inline-formula quicklatex-auto-format"
+                                                        alt="&#97;&#32;&#61;&#32;&#53;&#32;&#43;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#50;&#120;&#32;&#45;&#32;&#122;&#125;&#123;&#51;&#32;&#43;&#32;&#121;&#94;&#123;&#50;&#125;&#125;"
+                                                        title="Rendered by QuickLaTeX.com" height="26" width="98"
+                                                        style="vertical-align: -10px;" /></td>
+                                                <td><img src="img/quicklatex.com-d81082f47178dfe40b0f5bc787d9344f_l3.png"
+                                                        class="ql-img-inline-formula quicklatex-auto-format"
+                                                        alt="&#97;&#32;&#61;&#32;&#40;&#49;&#32;&#43;&#32;&#122;&#41;&#32;&#92;&#99;&#100;&#111;&#116;&#32;&#92;&#102;&#114;&#97;&#99;&#123;&#120;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#121;&#125;&#123;&#120;&#94;&#123;&#50;&#125;&#43;&#52;&#125;&#125;&#123;&#50;&#43;&#92;&#102;&#114;&#97;&#99;&#123;&#49;&#125;&#123;&#120;&#94;&#123;&#50;&#125;&#43;&#52;&#125;&#125;"
+                                                        title="Rendered by QuickLaTeX.com" height="41" width="152"
+                                                        style="vertical-align: -17px;" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </li>
+                                    <p> <b class="number-cirle">2</b> Напишите программу для решения геометрической
+                                        задачи.</p>
+                                    <ul>
+                                        <li style="list-style-type: none;">1. Найдите длину окружности и площадь круга
+                                            заданного радиуса.</li>
+                                        <li style="list-style-type: none;">2*. Найдите угол при основании
+                                            равнобедренного треугольника, если известен угол при вершине.</li>
+                                    </ul>
+                                    </li>
+                                    <p> <b class="number-cirle">3</b> >Напишите программу для решения физической задачи.
+                                    </p>
+                                    <ul>
+                                        <li style="list-style-type: none;">1. Велосипедист едет с постоянной скоростью
+                                            <span lang="en-US"><i>v</i></span> км/ч. За сколько минут он проедет
+                                            расстояние в <i>s</i> км?
+                                        </li>
+                                        <li style="list-style-type: none;">2*. Автомобиль проходит первую часть пути
+                                            длиной <span lang="en-US"><i>s</i></span><sub>1</sub> км за <span
+                                                lang="en-US"><i>t</i></span><sub>1</sub> мин, участок пути длиной <span
+                                                lang="be-BY"><i>s</i></span><sub>2</sub> км за <span
+                                                lang="en-US"><i>t</i></span><sub>2</sub> мин и участок длиной <span
+                                                lang="en-US"><i>s</i></span><sub>3</sub> км за <span
+                                                lang="en-US"><i>t</i></span><sub>3</sub> мин. Найдите среднюю скорость
+                                            автомобиля, выраженную в км/ч.</li>
+                                    </ul>
+                                    </li>
+                                    <p> <b class="number-cirle">4</b> Напишите программу для решения химической задачи.
+                                    </p>
+                                    <ul>
+                                        <li style="list-style-type: none;">1. В организме человека на долю атомов
+                                            кислорода приходится 65 % от массы тела. Найдите массу атомов кислорода для
+                                            своей массы тела.</li>
+                                        <li style="list-style-type: none;">2*. Масса одного атома кислорода равна 26.56
+                                            ∙ 10<sup>−27</sup> (это число в программе на языке Pascal записывается так:
+                                            26.56<span lang="en-US">E</span>-27, буква <span lang="en-US">E</span> —
+                                            английская). Определите, сколько атомов кислорода содержится в вашем теле.
+                                        </li>
+                                    </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <p>
+                        </div>
+                        <hr class="last-hr">
+                    </div><!-- end .entry-content -->
+
+
+                </div><!-- end #post-## -->
+                <div id="comments">
+
+
+                </div><!-- #comments -->
+
+
+            </div><!-- end .column-content -->
+
+
+
+            <div class="column column-narrow column-last">
+
+                <div id="custom_html-2" class="widget_text widget clearfix widget_custom_html">
+                    <div class="textwidget custom-html-widget"></div>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+
+
+
+
+        </div><!-- end #content -->
+
+
+
+        <div id="footer" class="clearfix">
+
+            <section class="site-widgetized-section">
+                <div class="widgets clearfix  widgets-1">
+
+                    <style type="text/css">
+                        .qtranxs_widget ul {
+                            margin: 0;
+                        }
+
+                        .qtranxs_widget ul li {
+                            display: inline;
+                            /* horizontal list, use "list-item" or other appropriate value for vertical list */
+                            list-style-type: none;
+                            /* use "initial" or other to enable bullets */
+                            margin: 0 5px 0 0;
+                            /* adjust spacing between items */
+                            opacity: 0.5;
+                            -o-transition: 1s ease opacity;
+                            -moz-transition: 1s ease opacity;
+                            -webkit-transition: 1s ease opacity;
+                            transition: 1s ease opacity;
+                        }
+
+                        /* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */
+                        /* other way to control spacing */
+                        .qtranxs_widget ul li.active {
+                            opacity: 0.8;
+                        }
+
+                        .qtranxs_widget ul li:hover {
+                            opacity: 1;
+                        }
+
+                        .qtranxs_widget img {
+                            box-shadow: none;
+                            vertical-align: middle;
+                            display: initial;
+                        }
+
+                        .qtranxs_flag {
+                            height: 12px;
+                            width: 18px;
+                            display: block;
+                        }
+
+                        .qtranxs_flag_and_text {
+                            padding-left: 20px;
+                        }
+
+                        .qtranxs_flag span {
+                            display: none;
+                        }
+                    </style>
+                    <div id="qtranslate-2" class="widget clearfix qtranxs_widget">
+
+                        <div class="qtranxs_widget_end"></div>
+                    </div>
+                </div>
+            </section><!-- .site-widgetized-section -->
+
+
+            <p class="copy">
+
+            </p>
+        </div><!-- end #footer -->
+    </div><!-- end #wrap -->
+
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = { "apiSettings": { "root": "http:\/\/informatika7.adu.by\/index.php?rest_route=\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "recaptcha": { "messages": { "empty": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442." } } };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/form.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var JQLBSettings = { "fitToScreen": "0", "resizeSpeed": "400", "displayDownloadLink": "0", "navbarOnTop": "0", "loopImages": "", "resizeCenter": "", "marginSize": "0", "linkTarget": "", "help": "", "prevLinkTitle": "previous image", "nextLinkTitle": "next image", "prevLinkText": "\u00ab Previous", "nextLinkText": "Next \u00bb", "closeTitle": "close image gallery", "image": "Image ", "of": " of ", "download": "Download", "jqlb_overlay_opacity": "80", "jqlb_overlay_color": "#000000", "jqlb_overlay_close": "1", "jqlb_border_width": "10", "jqlb_border_color": "#ffffff", "jqlb_border_radius": "0", "jqlb_image_info_background_transparency": "100", "jqlb_image_info_bg_color": "#ffffff", "jqlb_image_info_text_color": "#000000", "jqlb_image_info_text_fontsize": "10", "jqlb_show_text_for_image": "1", "jqlb_next_image_title": "next image", "jqlb_previous_image_title": "previous image", "jqlb_next_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/next.gif", "jqlb_previous_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/prev.gif", "jqlb_maximum_width": "", "jqlb_maximum_height": "", "jqlb_show_close_button": "1", "jqlb_close_image_title": "close image gallery", "jqlb_close_image_max_heght": "22", "jqlb_image_for_close_lightbox": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/closelabel.gif", "jqlb_keyboard_navigation": "1", "jqlb_popup_size_fix": "0" };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/lightBox2.min.js'></script>
+    <script type='text/javascript' src='libs/jquerymenu.js'></script>
+    <script type='text/javascript' src='libs/superfish.js'></script>
+    <script type='text/javascript' src='libs/functions.js'></script>
+    <script type='text/javascript' src='libs/bootstrap.min.js'></script>
+    <script type='text/javascript' src='libs/wp-embed.js'></script>
+</body>
+
+</html>

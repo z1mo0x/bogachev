@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Информатика.&#8212; Электронное приложение к учебному пособию</title>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/informatika7.adu.by\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.22" } };
+        !function (t, a, e) { var r, i, n, o = a.createElement("canvas"), l = o.getContext && o.getContext("2d"); function c(t) { var e = a.createElement("script"); e.src = t, e.defer = e.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(e) } for (n = Array("flag", "emoji4"), e.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < n.length; i++)e.supports[n[i]] = function (t) { var e, a = String.fromCharCode; if (!l || !l.fillText) return !1; switch (l.clearRect(0, 0, o.width, o.height), l.textBaseline = "top", l.font = "600 32px Arial", t) { case "flag": return (l.fillText(a(55356, 56826, 55356, 56819), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 56826, 8203, 55356, 56819), 0, 0), e === o.toDataURL()) ? !1 : (l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), e !== o.toDataURL()); case "emoji4": return l.fillText(a(55358, 56794, 8205, 9794, 65039), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55358, 56794, 8203, 9794, 65039), 0, 0), e !== o.toDataURL() }return !1 }(n[i]), e.supports.everything = e.supports.everything && e.supports[n[i]], "flag" !== n[i] && (e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && e.supports[n[i]]); e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && !e.supports.flag, e.DOMReady = !1, e.readyCallback = function () { e.DOMReady = !0 }, e.supports.everything || (r = function () { e.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", r, !1), t.addEventListener("load", r, !1)) : (t.attachEvent("onload", r), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && e.readyCallback() })), (r = e.source || {}).concatemoji ? c(r.concatemoji) : r.wpemoji && r.twemoji && (c(r.twemoji), c(r.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-quicklatex-format-css' href='css/quicklate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='crayon-css' href='css/crayon.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='css/form.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-lightbox-2.min.css-css' href='css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-css' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-mobile-css' href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-google-font-default-css'
+        href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CRoboto+Condensed%3A400%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext&#038;ver=4.8.22'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='css/dashicons.css' type='text/css' media='all' />
+    <script type='text/javascript' src='libs/jquery.js' defer></script>
+    <script type='text/javascript' src='libs/jquery.min.js' defer></script>
+
+    <script type='text/javascript' src='libs/crayon.js' defer></script>
+    <script type='text/javascript' src='libs/common.js' defer></script>
+    <script type='text/javascript' src='libs/slide.js' defer></script>
+    <script type='text/javascript' src='libs/quicklate.js' defer></script>
+    <!-- <link rel='https://api.w.org/' href='http://informatika7.adu.by/index.php?rest_route=/' /> -->
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://informatika7.adu.by/xmlrpc.php?rsd" /> -->
+    <!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" -->
+    <!-- href="http://informatika7.adu.by/wp-includes/wlwmanifest.xml" /> -->
+    <!-- <link rel="canonical" href="http://informatika7.adu.by/" /> -->
+    <!-- <!~~ <link rel='shortlink' href='http://informatika7.adu.by/' /> ~~> -->
+    <!-- <link rel="alternate" type="application/json+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F" /> -->
+    <!-- <link rel="alternate" type="text/xml+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F&#038;format=xml" /> -->
+
+    <link hreflang="ru" href="http://informatika7.adu.by/?lang=ru" rel="alternate" />
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" defer
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+
+    <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js" defer></script>
+
+    <style>
+        .ui-widget-shadow {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript" src="libs/jquery-touch.js" defer></script>
+    <script type="text/javascript" src="libs/themeCommon.js" defer></script>
+
+
+
+</head>
+
+
+
+
+<body class="home page-template-default page page-id-290">
+
+    <a class="toggle-sidebar-right toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+    <a class="toggle-sidebar-left toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+
+
+
+    <!-- style="background-image: url('');" -->
+    <div id="header" class="clearfix" style="background-image: url('img/logo.jpg');">
+        <div class="inner-wrap">
+
+            <div id="logo" class="logo-left">
+
+                <h1 id="site-title">
+
+                    <a href="index.html" title="Информатика" rel="home">
+                        Информатика</a>
+                </h1>
+                <p id="site-description">Электронное приложение к учебному пособию</p>
+            </div><!-- end #logo -->
+
+            <div id="change-size">
+
+                <a class="minus" style="font-size: 14px;">A</a> / <a class="plus">A</a>
+
+            </div><!-- end #search -->
+
+            <button type="button" class="btn btn-primary openModal" data-toggle="modal" data-target="#exampleModal"
+                style="background-color: #007bff00; border-color: #007bff00;"><img
+                    src="/wp-content/themes/academica/images/mail-icon.png" alt="" width="28"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Напишите нам</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div role="form" class="wpcf7" id="wpcf7-f1825-o1" lang="ru-RU" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/#wpcf7-f1825-o1" method="post" class="wpcf7-form"
+                                    novalidate="novalidate">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="1825" />
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.2" />
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1825-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                    </div>
+                                    <p><label> Сообщение:<br />
+                                            <span class="wpcf7-form-control-wrap your-message"><textarea
+                                                    name="your-message" cols="40" rows="10"
+                                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                    aria-required="true" aria-invalid="false"></textarea></span>
+                                        </label></p>
+                                    <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                                    </p>
+                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popover-info"
+                data-content="<p><span >Материал учебного пособия разделен на две колонки. Цвет фона поможет вам разобраться в назначении размещенной на этом фоне информации:</span></p><p><span ><span class='info-white'>белый</span> — основные материалы, обязательные для изучения;</span></p><p><span ><span class='info-blue'>голубой</span> — примеры, иллюстрирующие основные материалы;</span></p><p><span ><span class='info-yellow' style='display: inline-block;'>желтый</span> — определения основных понятий;</span></p><p><span ><span class='info-green'>светло-зеленый</span> — исторические сведения, информация об ученых, внесших вклад в развитие информатики, и другие интересные факты.</span></p><p><span >В учебном пособии используются следующие условные обозначения:</span></p><p><span ><img class='wp-image-357 alignnone' src='http://informatika7.adu.by/wp-content/uploads/2017/08/Г_1.jpg' alt='' width='46' height='46' /> — вопросы и задания для проверки знаний;</span></p><p><span ><img class='alignnone wp-image-355' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image2_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых используется компьютер;</span></p><p><span ><img class='alignnone wp-image-356' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image3_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания для выполнения в тетради;</span></p><p><span ><img class='alignnone wp-image-358' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image4.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых может быть использована информация, размещенная на Национальном образовательном портале;</span></p><p>* — задание или пример для любознательных.</p>"
+                data-placement="bottom"></div>
+        </div><!-- end .inner-wrap -->
+    </div><!-- end #header -->
+
+    <div id="wrap">
+
+        <div id="content" class="clearfix">
+
+            <div class="column column-title">
+                <div id="crumbs">
+                    <p></p>
+                </div><!-- end #crumbs -->
+            </div><!-- end .column-title -->
+
+            <div class="column column-narrow">
+                <div class="widget widget-text wp_widget_plugin_box widget_wp_my_plugin" id="wp_my_plugin-2">
+                    <ul class="vw-navigation">
+                        <li><a href="index.html">От авторов</a></li>
+                        <li>
+                            <a>Глава 1. Информация и информационные процессы</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page2.html">§ 1. Информация в жизни человека</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page2.html#1.1">1.1. Виды информации</a>
+                                        </li>
+                                        <li><a href="page2.html#1.2">1.2. Носители
+                                                информации</a></li>
+                                        <li><a href="page2.html#1.3">1.3. Информационные
+                                                процессы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page3.html">§ 2. Представление информации в
+                                        компьютере</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#2.1">2.1. Кодирование
+                                                информации</a></li>
+                                        <li><a href="page3.html#2.2">2.2. Единицы измерения
+                                                объема информации</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 2. Представление о логике высказываний.</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page3.html">§ 3. Логика высказываний</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#3.1">3.1. Понятие
+                                                высказывания</a></li>
+                                        <li><a href="page3.html#3.2">3.2. Логическая
+                                                операция НЕ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page4.html">§ 4. Логические операции И и
+                                        ИЛИ</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page4.html#4.1">4.1. Логическая
+                                                операция И</a></li>
+                                        <li><a href="page4.html#4.2">4.2. Логическая
+                                                операция ИЛИ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page5.html">§ 5. Множества</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page5.html#5.1">5.1. Понятие
+                                                множества</a></li>
+                                        <li><a href="page5.html#5.2">5.2. Понятие
+                                                подмножества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page6.html">§ 6. Операции над множествами</a>
+                                </li>
+                                <li>
+                                    <a href="page7.html">§ 7. Использование логических
+                                        операций для построения поисковых запросов в Интернете</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page7.html#7.1">7.1. Поиск информации
+                                                в Интернете</a></li>
+                                        <li><a href="page7.html#7.2">7.2. Сокращение
+                                                области поиска</a></li>
+                                        <li><a href="page7.html#7.3">7.3. Использование
+                                                операторов в поисковых запросах</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 3. Основные алгоритмические конструкции</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page8.html">§ 8. Алгоритмы и исполнители</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page8.html#8.1">8.1. Понятие
+                                                алгоритма</a></li>
+                                        <li><a href="page8.html#8.2">8.2. Исполнитель
+                                                Чертежник</a></li>
+                                        <li><a href="page8.html#8.3">8.3. Алгоритмическая
+                                                конструкция следование</a></li>
+                                        <li><a href="page8.html#8.4">8.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page9.html">§ 9. Исполнитель Робот</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page9.html#9.1">9.1. Роботы в жизни
+                                                человека</a></li>
+                                        <li><a href="page9.html#9.2">9.2. Среда обитания и
+                                                система команд исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.3">9.3. Использование
+                                                алгоритмической конструкции следование для исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.4">9.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page10.html">§ 10. Алгоритмическая конструкция
+                                        повторение</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page10.html#10.1">10.1. Алгоритмы с
+                                                циклами</a></li>
+                                        <li><a href="page10.html#10.2">10.2. Использование
+                                                команды цикла с параметром для исполнителя Робот</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page11.html">§ 11. Использование условий</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page11.html#11.1">11.1. Понятие
+                                                условия</a></li>
+                                        <li><a href="page11.html#11.2">11.2. Цикл с
+                                                предусловием</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page12.html">§ 12. Алгоритмическая конструкция
+                                        ветвление</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page12.html#12.1">12.1. Команда
+                                                ветвления</a></li>
+                                        <li><a href="page12.html#12.2">12.2. Составные
+                                                условия</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page13.html">§ 13. Использование основных
+                                        алгоритмических конструкций для исполнителя Робот</a></li>
+                                <li>
+                                    <a href="page14.html">§ 14. Язык программирования
+                                        Паскаль</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page14.html#14.1">14.1. Команда
+                                                вывода</a></li>
+                                        <li><a href="page14.html#14.2">14.2. Понятие типа
+                                                данных</a></li>
+                                        <li><a href="page14.html#14.3">14.3. Оператор
+                                                присваивания</a></li>
+                                        <li><a href="page14.html#14.4">14.4. Ввод данных</a>
+                                        </li>
+                                        <li><a href="page14.html#14.5">14.5. Структура
+                                                программы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page15.html">§ 15. Организация вычислений</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page15.html#15.1">15.1. Вычисление
+                                                значения арифметического выражения</a></li>
+                                        <li><a href="page15.html#15.2">15.2. Использование
+                                                языка программирования для решения задач</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=189">§ 16. Реализация алгоритмов работы -->
+                                <!-- с целочисленными данными</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.1">16.1. Целочисленный -->
+                                <!-- тип данных</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.2">16.2. Использование -->
+                                <!-- целочисленных данных для решения задач</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 4. Аппаратное и программное обеспечение компьютера</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=191">§ 17. Современные компьютерные -->
+                                <!-- устройства</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.1">17.1. Различные виды -->
+                                <!-- компьютеров</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.2">17.2. Назначение -->
+                                <!-- устройств персонального компьютера</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=193">§ 18. Операционная система</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.1">18.1. Основные виды -->
+                                <!-- операционных систем</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.2">18.2. Элементы -->
+                                <!-- графического пользовательского интерфейса</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.3">18.3. Основные -->
+                                <!-- элементы файловой системы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.4">18.4. Типовые -->
+                                <!-- операции с файлами и папками</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=195">§ 19. Локальная компьютерная -->
+                                <!-- сеть</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=197">§ 20. Архивация</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.1">20.1. -->
+                                <!-- Программы-архиваторы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.2">20.2. Создание -->
+                                <!-- архивов и извлечение файлов из архива</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=199">§ 21. Программное обеспечение</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.1">21.1. Классификация -->
+                                <!-- программного обеспечения</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.2">21.2. Вредоносные -->
+                                <!-- программы и способы защиты от них</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 5. Работа с векторной графикой</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=201">§ 22. Понятие векторной -->
+                                <!-- графики</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=203">§ 23. Интерфейс векторного -->
+                                <!-- графического редактора</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=205">§ 24. Создание и редактирование -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.1">24.1. Создание -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.2">24.2. Редактирование -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.3">24.3. Обводка и -->
+                                <!-- заливка</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.4">24.4. Работа с -->
+                                <!-- цветом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=207">§ 25. Операции над объектами -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.1">25.1. Копирование, -->
+                                <!-- выравнивание и взаимное расположение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.2">25.2. Группировка. -->
+                                <!-- Операции объединения объектов</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=209">§ 26. Работа с текстом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=294">Приложение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=288">Глоссарий</a></li> -->
+                            </ul>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+            <div class="column column-content single">
+
+
+                <div id="post-290" class="post-290 page type-page status-publish hentry">
+
+                    <h1 class="title-header">От авторов</h1>
+                    <div class="entry-content clearfix">
+                        <p class="splash" style="display: none;" align="center"><img
+                                src="http://informatika7.adu.by/wp-content/uploads/2017/08/Informatica-OBL-799x1024.jpg"
+                                alt="" /></p>
+                        <p class="padding-top-100" align="center">Электронное приложение по учебному пособию по
+                            "Информатике" для школы
+                            МКОУ Медведская средняя школа #17
+                            <!-- Часть «Об учебнике» переименуйте, пожалуйста, так: Об учебном пособии По техзаданию у нас именно пособие. --><br />
+
+                            авторов В. М. Котова, А. И. Лапо, Е. Н. Войтехович<br />
+                            для учреждений общего среднего образования
+                        </p>
+                        <p>&nbsp;</p>
+                        <p class="margin-top-200" align="center"><i>Допущено</i></p>
+                        <p align="center"><i>Министерством образования</i></p>
+                        <p align="center"><i>Российской Федерации</i></p>
+                        <p>&nbsp;</p>
+                        <p class="margin-top-200" align="center"><a name="_Toc478981587"></a> Щекино «Тульский
+                            Экономический Колледж»
+                            2023</p>
+                        <p>&nbsp;</p>
+                        <h2 class="western margin-top-200"><span style="color: #00000a;"><span
+                                    style="font-family: 'Times New Roman', serif;"><span style="font-size: large;">От
+                                        авторов</span></span></span></h2>
+                        <p><span style="font-family: 'Times New Roman', serif;">Дорогие ученики! Перед вами
+                                электронное приложение к учебному пособию по информатике — предмету, изучение которого
+                                позволит вам получить необходимые знания и умения в области информационных технологий,
+                                ставших неотъемлемой частью нашей жизни.</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;">В настоящее время исследования по
+                                информатике особенно востребованны и актуальны. Роль этой дисциплины в условиях
+                                современного мира все более возрастает. Мы, авторы учебного пособия и электронного
+                                приложения к нему, постарались сделать так, чтобы изучение информатики было для вас
+                                интересным и увлекательным. Надеемся, что полученные знания вы сможете применить для
+                                решения практических задач из различных предметных областей.</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;">Материал каждого параграфа разделен на
+                                две колонки. Цвет фона поможет вам разобраться в назначении размещенной на этом фоне
+                                информации:</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><span class="info-white">белый</span> —
+                                основные материалы, обязательные для изучения;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><span class="info-blue">голубой</span> —
+                                примеры, иллюстрирующие основные материалы;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><span class="info-yellow"
+                                    style="display: inline;">желтый</span> — определения основных понятий;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><span
+                                    class="info-green">светло-зеленый</span> — исторические сведения, информация об
+                                ученых, внесших вклад в развитие информатики, и другие интересные факты.</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;">В электронном приложении к учебному
+                                пособию используются следующие условные обозначения:</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><img class="wp-image-357 alignnone"
+                                    src="img/question.jpg" alt="" width="46" height="46" /> — тесты;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><img class="alignnone wp-image-355"
+                                    src="img/computer.jpg" alt="" width="46" height="46" /> — раздел «Упражнения»
+                                содержит задания, при выполнении
+                                которых используется компьютер;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><img class="alignnone wp-image-356"
+                                    src="img/test.jpg" alt="" width="46" height="46" /> — раздел «Упражнения» содержит
+                                задания для выполнения в
+                                тетради;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;"><img class="alignnone wp-image-358"
+                                    src="img/M.jpg" alt="" width="46" height="46" /> — раздел «Упражнения» содержит
+                                задания, при выполнении
+                                которых может быть использована информация, размещенная на Национальном образовательном
+                                портале;</span></p>
+                        <p><span style="font-family: 'Times New Roman', serif;">* — задание или пример для
+                                любознательных.</span></p>
+
+                        <p><span style="font-family: 'Times New Roman', serif;">Имя файла для скачивания содержит номер
+                                параграфа и номер задания из упражнения после этого параграфа. Например, имя файла <span
+                                    lang="en-US">upr</span>6_3 означает, что файл относится к третьему заданию из
+                                упражнения после шестого параграфа. Также на портале размещены файлы с программами,
+                                рассмотренными в примерах. Такие файлы имеют имя <span lang="en-US">pr</span>10_1.<span
+                                    lang="en-US">pas</span> (программа для примера 10.1).</span></p>
+                        <p><span style="font-family: 'times new roman', times, serif;">Тесты, содержащиеся в электронном
+                                приложении к учебному пособию, можно выполнять в режиме онлайн. Если рядом с вариантами
+                                ответа стоит значок <img src="img/radio.png" />, то
+                                правильный ответ только один. В тестовых заданиях, варианты ответа которых перечислены с
+                                использованием значка <img src="img/check.png" />, несколько
+                                правильных ответов. Чтобы верно выполнить задание такого типа, вам необходимо найти и
+                                указать все правильные ответы, иначе компьютер выдаст сообщение об ошибке. В электронном
+                                приложении встречаются тестовые задания, ответы в которых необходимо разместить в
+                                правильном порядке. Для этого следует перетащить блоки с ответами на соответствующие
+                                позиции. Чтобы узнать, правильно ли вы выполнили тестовое задание, нажмите кнопку <img
+                                    src="img/button.png" />.</span>
+                        </p>
+                        <p>&nbsp;</p>
+                        <p class="margin-top-200" align="center">Учебно-электронное издание </p>
+                        <p align="center">Электронное приложение к учебному пособию «Информатика»<br />
+                            авторов В. М. Котова, А. И. Лапо, Е. Н. Войтехович<br />
+                            для учреждений общего среднего образования<br />
+                            с русским языком обучения</p>
+
+                        <p align="center">
+                            Разработал электронную версию <br>
+                            <i>Богачев Даниил Витальевич</i>
+                        </p>
+                        <p align="center"><!-- Здесь нужно будет указать итоговый объем эл. приложения --></p>
+                    </div><!-- end .entry-content -->
+
+
+                </div><!-- end #post-## -->
+                <div id="comments">
+
+
+                </div><!-- #comments -->
+
+
+            </div><!-- end .column-content -->
+
+
+
+            <div class="column column-narrow column-last">
+
+                <div id="custom_html-2" class="widget_text widget clearfix widget_custom_html">
+                    <div class="textwidget custom-html-widget"></div>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+
+
+
+
+        </div><!-- end #content -->
+
+
+
+        <div id="footer" class="clearfix">
+
+            <section class="site-widgetized-section">
+                <div class="widgets clearfix  widgets-1">
+
+                    <style type="text/css">
+                        .qtranxs_widget ul {
+                            margin: 0;
+                        }
+
+                        .qtranxs_widget ul li {
+                            display: inline;
+                            /* horizontal list, use "list-item" or other appropriate value for vertical list */
+                            list-style-type: none;
+                            /* use "initial" or other to enable bullets */
+                            margin: 0 5px 0 0;
+                            /* adjust spacing between items */
+                            opacity: 0.5;
+                            -o-transition: 1s ease opacity;
+                            -moz-transition: 1s ease opacity;
+                            -webkit-transition: 1s ease opacity;
+                            transition: 1s ease opacity;
+                        }
+
+                        /* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */
+                        /* other way to control spacing */
+                        .qtranxs_widget ul li.active {
+                            opacity: 0.8;
+                        }
+
+                        .qtranxs_widget ul li:hover {
+                            opacity: 1;
+                        }
+
+                        .qtranxs_widget img {
+                            box-shadow: none;
+                            vertical-align: middle;
+                            display: initial;
+                        }
+
+                        .qtranxs_flag {
+                            height: 12px;
+                            width: 18px;
+                            display: block;
+                        }
+
+                        .qtranxs_flag_and_text {
+                            padding-left: 20px;
+                        }
+
+                        .qtranxs_flag span {
+                            display: none;
+                        }
+                    </style>
+                    <div id="qtranslate-2" class="widget clearfix qtranxs_widget">
+
+                        <div class="qtranxs_widget_end"></div>
+                    </div>
+                </div>
+            </section><!-- .site-widgetized-section -->
+
+
+            <p class="copy">
+
+            </p>
+        </div><!-- end #footer -->
+    </div><!-- end #wrap -->
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var JQLBSettings = { "fitToScreen": "0", "resizeSpeed": "400", "displayDownloadLink": "0", "navbarOnTop": "0", "loopImages": "", "resizeCenter": "", "marginSize": "0", "linkTarget": "", "help": "", "prevLinkTitle": "previous image", "nextLinkTitle": "next image", "prevLinkText": "\u00ab Previous", "nextLinkText": "Next \u00bb", "closeTitle": "close image gallery", "image": "Image ", "of": " of ", "download": "Download", "jqlb_overlay_opacity": "80", "jqlb_overlay_color": "#000000", "jqlb_overlay_close": "1", "jqlb_border_width": "10", "jqlb_border_color": "#ffffff", "jqlb_border_radius": "0", "jqlb_image_info_background_transparency": "100", "jqlb_image_info_bg_color": "#ffffff", "jqlb_image_info_text_color": "#000000", "jqlb_image_info_text_fontsize": "10", "jqlb_show_text_for_image": "1", "jqlb_next_image_title": "next image", "jqlb_previous_image_title": "previous image", "jqlb_next_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/next.gif", "jqlb_previous_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/prev.gif", "jqlb_maximum_width": "", "jqlb_maximum_height": "", "jqlb_show_close_button": "1", "jqlb_close_image_title": "close image gallery", "jqlb_close_image_max_heght": "22", "jqlb_image_for_close_lightbox": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/closelabel.gif", "jqlb_keyboard_navigation": "1", "jqlb_popup_size_fix": "0" };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/form.js' defer></script>
+    <script type='text/javascript' src='libs/lightBox2.min.js' defer></script>
+    <script type='text/javascript' src='libs/jquerymenu.js' defer></script>
+    <script type='text/javascript' src='libs/superfish.js' defer></script>
+    <script type='text/javascript' src='libs/functions.js' defer></script>
+    <script type='text/javascript' src='libs/bootstrap.min.js' defer></script>
+    <script type='text/javascript' src='libs/wp-embed.js' defer></script>
+</body>
+
+</html>

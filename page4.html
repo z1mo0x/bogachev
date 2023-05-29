@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Информатика.&#8212; Электронное приложение к учебному пособию</title>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/informatika7.adu.by\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.22" } };
+        !function (t, a, e) { var r, i, n, o = a.createElement("canvas"), l = o.getContext && o.getContext("2d"); function c(t) { var e = a.createElement("script"); e.src = t, e.defer = e.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(e) } for (n = Array("flag", "emoji4"), e.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < n.length; i++)e.supports[n[i]] = function (t) { var e, a = String.fromCharCode; if (!l || !l.fillText) return !1; switch (l.clearRect(0, 0, o.width, o.height), l.textBaseline = "top", l.font = "600 32px Arial", t) { case "flag": return (l.fillText(a(55356, 56826, 55356, 56819), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 56826, 8203, 55356, 56819), 0, 0), e === o.toDataURL()) ? !1 : (l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), e !== o.toDataURL()); case "emoji4": return l.fillText(a(55358, 56794, 8205, 9794, 65039), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55358, 56794, 8203, 9794, 65039), 0, 0), e !== o.toDataURL() }return !1 }(n[i]), e.supports.everything = e.supports.everything && e.supports[n[i]], "flag" !== n[i] && (e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && e.supports[n[i]]); e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && !e.supports.flag, e.DOMReady = !1, e.readyCallback = function () { e.DOMReady = !0 }, e.supports.everything || (r = function () { e.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", r, !1), t.addEventListener("load", r, !1)) : (t.attachEvent("onload", r), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && e.readyCallback() })), (r = e.source || {}).concatemoji ? c(r.concatemoji) : r.wpemoji && r.twemoji && (c(r.twemoji), c(r.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-quicklatex-format-css' href='css/quicklate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='crayon-css' href='css/crayon.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='css/form.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-lightbox-2.min.css-css' href='css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-css' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-mobile-css' href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-google-font-default-css'
+        href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CRoboto+Condensed%3A400%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext&#038;ver=4.8.22'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='css/dashicons.css' type='text/css' media='all' />
+    <script type='text/javascript' src='libs/jquery.js' defer></script>
+    <script type='text/javascript' src='libs/jquery.min.js' defer></script>
+
+    <script type='text/javascript' src='libs/crayon.js' defer></script>
+    <script type='text/javascript' src='libs/common.js' defer></script>
+    <script type='text/javascript' src='libs/slide.js' defer></script>
+    <script type='text/javascript' src='libs/quicklate.js' defer></script>
+    <!-- <link rel='https://api.w.org/' href='http://informatika7.adu.by/index.php?rest_route=/' /> -->
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://informatika7.adu.by/xmlrpc.php?rsd" /> -->
+    <!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" -->
+    <!-- href="http://informatika7.adu.by/wp-includes/wlwmanifest.xml" /> -->
+    <!-- <link rel="canonical" href="http://informatika7.adu.by/" /> -->
+    <!-- <!~~ <link rel='shortlink' href='http://informatika7.adu.by/' /> ~~> -->
+    <!-- <link rel="alternate" type="application/json+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F" /> -->
+    <!-- <link rel="alternate" type="text/xml+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F&#038;format=xml" /> -->
+
+    <link hreflang="ru" href="http://informatika7.adu.by/?lang=ru" rel="alternate" />
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" defer
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+
+    <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js" defer></script>
+
+    <style>
+        .ui-widget-shadow {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript" src="libs/jquery-touch.js" defer></script>
+    <script type="text/javascript" src="libs/themeCommon.js" defer></script>
+
+
+
+</head>
+
+
+
+
+<body class="home page-template-default page page-id-290">
+
+    <a class="toggle-sidebar-right toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+    <a class="toggle-sidebar-left toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+
+
+
+    <!-- style="background-image: url('');" -->
+    <div id="header" class="clearfix" style="background-image: url('img/logo.jpg');">
+        <div class="inner-wrap">
+
+            <div id="logo" class="logo-left">
+
+                <h1 id="site-title">
+
+                    <a href="index.html" title="Информатика" rel="home">
+                        Информатика</a>
+                </h1>
+                <p id="site-description">Электронное приложение к учебному пособию</p>
+            </div><!-- end #logo -->
+
+            <div id="change-size">
+
+                <a class="minus" style="font-size: 14px;">A</a> / <a class="plus">A</a>
+
+            </div><!-- end #search -->
+
+            <button type="button" class="btn btn-primary openModal" data-toggle="modal" data-target="#exampleModal"
+                style="background-color: #007bff00; border-color: #007bff00;"><img
+                    src="/wp-content/themes/academica/images/mail-icon.png" alt="" width="28"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Напишите нам</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div role="form" class="wpcf7" id="wpcf7-f1825-o1" lang="ru-RU" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/#wpcf7-f1825-o1" method="post" class="wpcf7-form"
+                                    novalidate="novalidate">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="1825" />
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.2" />
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1825-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                    </div>
+                                    <p><label> Сообщение:<br />
+                                            <span class="wpcf7-form-control-wrap your-message"><textarea
+                                                    name="your-message" cols="40" rows="10"
+                                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                    aria-required="true" aria-invalid="false"></textarea></span>
+                                        </label></p>
+                                    <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                                    </p>
+                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popover-info"
+                data-content="<p><span >Материал учебного пособия разделен на две колонки. Цвет фона поможет вам разобраться в назначении размещенной на этом фоне информации:</span></p><p><span ><span class='info-white'>белый</span> — основные материалы, обязательные для изучения;</span></p><p><span ><span class='info-blue'>голубой</span> — примеры, иллюстрирующие основные материалы;</span></p><p><span ><span class='info-yellow' style='display: inline-block;'>желтый</span> — определения основных понятий;</span></p><p><span ><span class='info-green'>светло-зеленый</span> — исторические сведения, информация об ученых, внесших вклад в развитие информатики, и другие интересные факты.</span></p><p><span >В учебном пособии используются следующие условные обозначения:</span></p><p><span ><img class='wp-image-357 alignnone' src='http://informatika7.adu.by/wp-content/uploads/2017/08/Г_1.jpg' alt='' width='46' height='46' /> — вопросы и задания для проверки знаний;</span></p><p><span ><img class='alignnone wp-image-355' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image2_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых используется компьютер;</span></p><p><span ><img class='alignnone wp-image-356' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image3_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания для выполнения в тетради;</span></p><p><span ><img class='alignnone wp-image-358' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image4.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых может быть использована информация, размещенная на Национальном образовательном портале;</span></p><p>* — задание или пример для любознательных.</p>"
+                data-placement="bottom"></div>
+        </div><!-- end .inner-wrap -->
+    </div><!-- end #header -->
+
+    <div id="wrap">
+
+        <div id="content" class="clearfix">
+
+            <div class="column column-title">
+                <div id="crumbs">
+                    <p></p>
+                </div><!-- end #crumbs -->
+            </div><!-- end .column-title -->
+
+            <div class="column column-narrow">
+                <div class="widget widget-text wp_widget_plugin_box widget_wp_my_plugin" id="wp_my_plugin-2">
+                    <ul class="vw-navigation">
+                        <li><a href="index.html">От авторов</a></li>
+                        <li>
+                            <a>Глава 1. Информация и информационные процессы</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page2.html">§ 1. Информация в жизни человека</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page2.html#1.1">1.1. Виды информации</a>
+                                        </li>
+                                        <li><a href="page2.html#1.2">1.2. Носители
+                                                информации</a></li>
+                                        <li><a href="page2.html#1.3">1.3. Информационные
+                                                процессы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page3.html">§ 2. Представление информации в
+                                        компьютере</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#2.1">2.1. Кодирование
+                                                информации</a></li>
+                                        <li><a href="page3.html#2.2">2.2. Единицы измерения
+                                                объема информации</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 2. Представление о логике высказываний.</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page3.html">§ 3. Логика высказываний</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#3.1">3.1. Понятие
+                                                высказывания</a></li>
+                                        <li><a href="page3.html#3.2">3.2. Логическая
+                                                операция НЕ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page4.html">§ 4. Логические операции И и
+                                        ИЛИ</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page4.html#4.1">4.1. Логическая
+                                                операция И</a></li>
+                                        <li><a href="page4.html#4.2">4.2. Логическая
+                                                операция ИЛИ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page5.html">§ 5. Множества</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page5.html#5.1">5.1. Понятие
+                                                множества</a></li>
+                                        <li><a href="page5.html#5.2">5.2. Понятие
+                                                подмножества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page6.html">§ 6. Операции над множествами</a>
+                                </li>
+                                <li>
+                                    <a href="page7.html">§ 7. Использование логических
+                                        операций для построения поисковых запросов в Интернете</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page7.html#7.1">7.1. Поиск информации
+                                                в Интернете</a></li>
+                                        <li><a href="page7.html#7.2">7.2. Сокращение
+                                                области поиска</a></li>
+                                        <li><a href="page7.html#7.3">7.3. Использование
+                                                операторов в поисковых запросах</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 3. Основные алгоритмические конструкции</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page8.html">§ 8. Алгоритмы и исполнители</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page8.html#8.1">8.1. Понятие
+                                                алгоритма</a></li>
+                                        <li><a href="page8.html#8.2">8.2. Исполнитель
+                                                Чертежник</a></li>
+                                        <li><a href="page8.html#8.3">8.3. Алгоритмическая
+                                                конструкция следование</a></li>
+                                        <li><a href="page8.html#8.4">8.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page9.html">§ 9. Исполнитель Робот</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page9.html#9.1">9.1. Роботы в жизни
+                                                человека</a></li>
+                                        <li><a href="page9.html#9.2">9.2. Среда обитания и
+                                                система команд исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.3">9.3. Использование
+                                                алгоритмической конструкции следование для исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.4">9.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page10.html">§ 10. Алгоритмическая конструкция
+                                        повторение</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page10.html#10.1">10.1. Алгоритмы с
+                                                циклами</a></li>
+                                        <li><a href="page10.html#10.2">10.2. Использование
+                                                команды цикла с параметром для исполнителя Робот</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page11.html">§ 11. Использование условий</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page11.html#11.1">11.1. Понятие
+                                                условия</a></li>
+                                        <li><a href="page11.html#11.2">11.2. Цикл с
+                                                предусловием</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page12.html">§ 12. Алгоритмическая конструкция
+                                        ветвление</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page12.html#12.1">12.1. Команда
+                                                ветвления</a></li>
+                                        <li><a href="page12.html#12.2">12.2. Составные
+                                                условия</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page13.html">§ 13. Использование основных
+                                        алгоритмических конструкций для исполнителя Робот</a></li>
+                                <li>
+                                    <a href="page14.html">§ 14. Язык программирования
+                                        Паскаль</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page14.html#14.1">14.1. Команда
+                                                вывода</a></li>
+                                        <li><a href="page14.html#14.2">14.2. Понятие типа
+                                                данных</a></li>
+                                        <li><a href="page14.html#14.3">14.3. Оператор
+                                                присваивания</a></li>
+                                        <li><a href="page14.html#14.4">14.4. Ввод данных</a>
+                                        </li>
+                                        <li><a href="page14.html#14.5">14.5. Структура
+                                                программы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page15.html">§ 15. Организация вычислений</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page15.html#15.1">15.1. Вычисление
+                                                значения арифметического выражения</a></li>
+                                        <li><a href="page15.html#15.2">15.2. Использование
+                                                языка программирования для решения задач</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=189">§ 16. Реализация алгоритмов работы -->
+                                <!-- с целочисленными данными</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.1">16.1. Целочисленный -->
+                                <!-- тип данных</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.2">16.2. Использование -->
+                                <!-- целочисленных данных для решения задач</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 4. Аппаратное и программное обеспечение компьютера</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=191">§ 17. Современные компьютерные -->
+                                <!-- устройства</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.1">17.1. Различные виды -->
+                                <!-- компьютеров</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.2">17.2. Назначение -->
+                                <!-- устройств персонального компьютера</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=193">§ 18. Операционная система</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.1">18.1. Основные виды -->
+                                <!-- операционных систем</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.2">18.2. Элементы -->
+                                <!-- графического пользовательского интерфейса</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.3">18.3. Основные -->
+                                <!-- элементы файловой системы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.4">18.4. Типовые -->
+                                <!-- операции с файлами и папками</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=195">§ 19. Локальная компьютерная -->
+                                <!-- сеть</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=197">§ 20. Архивация</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.1">20.1. -->
+                                <!-- Программы-архиваторы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.2">20.2. Создание -->
+                                <!-- архивов и извлечение файлов из архива</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=199">§ 21. Программное обеспечение</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.1">21.1. Классификация -->
+                                <!-- программного обеспечения</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.2">21.2. Вредоносные -->
+                                <!-- программы и способы защиты от них</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 5. Работа с векторной графикой</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=201">§ 22. Понятие векторной -->
+                                <!-- графики</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=203">§ 23. Интерфейс векторного -->
+                                <!-- графического редактора</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=205">§ 24. Создание и редактирование -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.1">24.1. Создание -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.2">24.2. Редактирование -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.3">24.3. Обводка и -->
+                                <!-- заливка</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.4">24.4. Работа с -->
+                                <!-- цветом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=207">§ 25. Операции над объектами -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.1">25.1. Копирование, -->
+                                <!-- выравнивание и взаимное расположение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.2">25.2. Группировка. -->
+                                <!-- Операции объединения объектов</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=209">§ 26. Работа с текстом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=294">Приложение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=288">Глоссарий</a></li> -->
+                            </ul>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+            <div class="column column-content single">
+
+
+                <div id="post-165" class="post-165 page type-page status-publish hentry">
+
+                    <h1 class="title-header">§ 4. Логические операции И и ИЛИ</h1>
+                    <div class="entry-content clearfix">
+                        <p><span style="font-size: large;">Логика высказываний позволяет строить <b>составные</b>
+                                <b>высказывания</b>. Они создаются из нескольких простых высказываний путем соединения
+                                их друг с другом с помощью логических операций <b>НЕ</b>, <b>И</b>, <b>ИЛИ</b> и
+                                др.</span></p>
+                        <h3 class="western" id="4.1"><a name="_Toc479265964"></a>4.1. Логическая операция И</h3>
+                        <p><span style="font-size: large;">Определение истинности или ложности составного высказывания
+                                зависит от того, являются ли истинными или ложными простые высказывания, входящие в его
+                                состав, а также от той логической операции, которая их связывает. </span></p>
+                        <p><span style="font-size: large;" class="info-yellow">Составное высказывание <i>А
+                                </i><b>И</b><i> В</i>, образованное в результате объединения двух простых высказываний
+                                <i>А</i> и <i>B</i> логической операцией <b>И</b>, истинно тогда и только тогда, когда
+                                <i>А</i> и <i>В</i> одновременно истинны (<a class="nav-ex" data-id="4.1">пример 4.1</a>
+                                и <a class="nav-ex" data-id="4.2">пример 4.2</a>). </span></p>
+                        <p><span style="font-size: large;">Операцию <b>И</b> называют <b>логическим умножением</b>.
+                                Равенства 1 &middot; 1 = 1, 1 &middot; 0 = 0, 0 &middot; 1 = 0, 0 &middot; 0 = 0, верные
+                                для обычного умножения, верны и для логического умножения. </span></p>
+                        <p><span style="font-size: large;">Представим таблицу истинности для логической операции
+                                <b>И</b>:</span></p>
+                        <p>&nbsp;</p>
+                        <table style="width:214px" class="table-center" cellspacing="0" cellpadding="7">
+                            <colgroup>
+                                <col width="56" />
+                                <col width="57" />
+                                <col width="57" />
+                            </colgroup>
+                            <tbody>
+                                <tr valign="top">
+                                    <td style="background: #deeaf6;color:#333;" bgcolor="#deeaf6" width="56">
+                                        <p align="center"><span style="font-size: large;"><i><b>А</b></i></span></p>
+                                    </td>
+                                    <td style="background: #deeaf6;color:#333;" bgcolor="#deeaf6" width="57">
+                                        <p align="center"><span style="font-size: large;"><i><b>В</b></i></span></p>
+                                    </td>
+                                    <td style="background: #deeaf6;color:#333;" bgcolor="#deeaf6" width="57">
+                                        <p align="center"><span style="font-size: large;"><i><b>А </b></i><b>И
+                                                </b><i><b>В</b></i></span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="56">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="56">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="56">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="56">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="57">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><span style="font-size: large;">Если хотя бы одно из простых высказываний, связанных
+                                операцией <b>И</b>, будет ложным, то и составное высказывание будет ложным.</span></p>
+                        <p><span style="font-size: large;">Для записи логической операции <b>И</b> используют следующие
+                                обозначения: <i>A </i><b>И</b><span lang="en-US"><b> </b></span><i>B</i>, <b>
+                                </b><i>A</i><span lang="en-US"><b> </b></span><b>AND</b><span lang="en-US"><b>
+                                    </b></span><i>B</i>, <i>A </i> &middot; <i>B</i>, <i>A </i>*<b> </b><i>B</i>,
+                                <i>A</i><sup>&and;</sup><i>B</i>, <i>A </i><b>&amp; </b><i>B</i>. </span></p>
+                        <h3 class="western" id="4.2"><a name="_Toc479265965"></a> 4.2. Логическая операция ИЛИ</h3>
+                        <p><span style="font-size: large;" class="info-yellow">Составное высказывание <i>А</i><b> ИЛИ
+                                </b><i>В</i>,<b> </b>образованное в результате объединения двух простых высказываний
+                                <i>А</i> и <i>B</i> логической операцией<b> ИЛИ</b>, ложно тогда и только тогда, когда
+                                <i>А</i> и <i>В</i> одновременно ложны (<a class="nav-ex" data-id="4.3">пример
+                                    4.3</a>).</span></p>
+                        <p><span style="font-size: large;">Другими словами, составное высказывание <i>А</i><b> ИЛИ
+                                </b><i>В</i> будет истинным, если истинно хотя бы одно из двух составляющих его простых
+                                высказываний (<a class="nav-ex" data-id="4.4">пример 4.4</a>). </span></p>
+                        <p><span style="font-size: large;">Таблица истинности для логической операции <b>ИЛИ</b> имеет
+                                следующий вид:</span></p>
+                        <table style="width:230px" class="table-center" cellspacing="0" cellpadding="7">
+                            <colgroup>
+                                <col width="51" />
+                                <col width="52" />
+                                <col width="83" />
+                            </colgroup>
+                            <tbody>
+                                <tr valign="top">
+                                    <td style="background: #deeaf6;" bgcolor="#deeaf6;" width="51">
+                                        <p align="center"><span style="font-size: large;"><i><b>А</b></i></span></p>
+                                    </td>
+                                    <td style="background: #deeaf6;" bgcolor="#deeaf6;" width="52">
+                                        <p align="center"><span style="font-size: large;"><i><b>В</b></i></span></p>
+                                    </td>
+                                    <td style="background: #deeaf6;" bgcolor="#deeaf6;" width="83"><span
+                                            style="font-size: large;"><i><b> А </b></i><b>ИЛИ</b><i><b> В</b></i></span>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="51">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="52">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="83">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="51">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="52">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="83">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="51">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                    <td width="52">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="83">
+                                        <p align="center"><span style="font-size: large;">1</span></p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="51">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="52">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                    <td width="83">
+                                        <p align="center"><span style="font-size: large;">0</span></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><span style="font-size: large;">Операцию <b>ИЛИ</b> называют <b>логическим сложением</b>.
+                                Равенства 1 + 0 = 1, 0 + 1 = 1, 0 + 0 = 0, верные для обычного сложения, верны и для
+                                логического сложения. </span></p>
+                        <p><span style="font-size: large;">Для записи логической операции <b>ИЛИ</b> можно использовать
+                                следующие выражения: <i>A</i><span lang="en-US"><b> </b></span><b>ИЛИ</b><span
+                                    lang="en-US"><b> </b></span><i>B</i>, <i>A</i><span lang="en-US"><b> OR
+                                    </b></span><i>B</i>, <i>A </i><b>+ </b><i>B</i>, <i>A</i><sup>&or;</sup><i>B</i>,
+                                <i>A </i><b>| </b><i>B</i>.</span></p>
+                        <p><span style="font-size: large;">Если в логическом выражении присутствует несколько логических
+                                операций, то важно определить порядок их выполнения. Наивысшим приоритетом обладает
+                                операция <b>НЕ</b>. Логическая операция <b>И</b>, т. е. логическое умножение,
+                                выполняется раньше операции <b>ИЛИ </b>— логического сложения (<a class="nav-ex"
+                                    data-id="4.5">пример 4.5</a>* и <a class="nav-ex" data-id="4.6">пример
+                                    4.6</a>*).</span></p>
+                        <p><span style="font-size: large;">Для изменения порядка выполнения логических операций
+                                используют скобки: в этом случае сначала выполняются операции в скобках, а затем — все
+                                остальные.</span></p>
+                        <p><span style="font-size: large;">Логические операции <b>И</b> и <b>ИЛИ</b> подчиняются
+                                переместительному закону: </span></p>
+                        <p align="center"><span style="font-size: large;"><span lang="en-US"><i>A</i></span><span
+                                    lang="en-US"><b> </b></span><b>И</b><span lang="en-US"><b> </b></span><span
+                                    lang="en-US"><i>B = B</i></span><span lang="en-US"><b> </b></span><b>И</b><span
+                                    lang="en-US"><b> </b></span><span lang="en-US"><i>A</i></span><span
+                                    lang="en-US">;</span></span></p>
+                        <p align="center"><span style="font-size: large;"><span lang="en-US"><i>A</i></span><span
+                                    lang="en-US"><b> </b></span><b>ИЛИ</b><span lang="en-US"><b> </b></span><span
+                                    lang="en-US"><i>B = B</i></span><span lang="en-US"><b> </b></span><b>ИЛИ</b><span
+                                    lang="en-US"><b> </b></span><span lang="en-US"><i>A</i></span><span
+                                    lang="en-US">.</span></span></p>
+                        <p><span style="font-size: large;">Чтобы определить значение составного логического выражения,
+                                иногда достаточно знать значение только одного простого высказывания. </span></p>
+                        <p><span style="font-size: large;">Так, если в составном высказывании с операцией <b>И</b>
+                                значение хотя бы одного простого высказывания является ложным, то и значение составного
+                                высказывания будет ложным. Если в составном высказывании с операцией <b>ИЛИ</b> значение
+                                хотя бы одного простого будет истинным, то и значение составного высказывания будет
+                                истинным (<a class="nav-ex" data-id="4.7">пример 4.7</a>).</span></p>
+                        <table style="width:100%" class="right-panel info-blue">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span style="font-size: large;"><b data-ex-id="4.1">Пример 4.1. </b></span><span
+                                            style="font-size: large;">Проанализируем высказывание «Число 456 трехзначное
+                                            и четное». </span></p>
+                                        <p><span style="font-size: large;">Данное высказывание является составным,
+                                                поскольку оно содержит два простых высказывания: </span></p>
+                                        <p><span style="font-size: large;">«Число 456 трехзначное» (высказывание
+                                                <i>А</i>) и «Число 456 четное» (высказывание <i>В</i>). Высказывания
+                                                <i>А</i> и <i>В</i> соединены вместе логической операцией <b>И</b>, в
+                                                результате получено составное высказывание <i>А</i> <b>И</b> <i>B.
+                                                </i>Высказывание <i>А</i> истинно, высказывание <i>В</i> истинно.
+                                                Поэтому высказывание <i>А </i><b>И </b><i>B </i>истинно:<i> </i>(<i>А
+                                                </i><b>И </b><i>B</i>) <i>= </i>1.</span></p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.2">Пример 4.2.
+                                                </b>Высказывание <i>А</i>: «Геракл — герой древнегреческой мифологии».
+                                                <b>Истинно</b>, <i>А </i>= 1.</span></p>
+                                        <p><span style="font-size: large;">Высказывание <i>В</i>: «Геракл — сын бога
+                                                Зевса». <b>Истинно</b>, <i>B</i> = 1.</span></p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-597"
+                                                src="img/46-198x300.jpg" alt="" width="198" height="300" /></p>
+                                        <p><span style="font-size: large;">Высказывание <i>А </i><b>И</b><i> В</i>:
+                                                «Геракл — герой древнегреческой мифологии <b>И</b> сын бога Зевса».<b>
+                                                    Истинно</b>, (<i>А </i><b>И</b><i> В</i>) = 1.</span></p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.3">Пример 4.3.
+                                                </b>Проанализируем высказывание «Семиклас-сники изучают философию или
+                                                астрономию».</span></p>
+                                        <p><span style="font-size: large;">Данное составное высказывание образовано из
+                                                двух простых высказываний: «Семиклассники изучают философию»
+                                                (высказывание <i>А</i>), «Семиклас-сники изучают астрономию»
+                                                (высказывание <i>В</i>), которые связаны логической операцией
+                                                <b>ИЛИ</b>. В результате получилось составное высказывание <i>А</i>
+                                                <b>ИЛИ </b><i>B. </i>Высказывание <i>А</i> ложно, высказывание <i>В</i>
+                                                ложно. Поэтому высказывание <i>А</i> <b>ИЛИ </b><i>B </i> ложно:
+                                                (<i>А</i> <b>ИЛИ </b><i>B</i>) <i>= </i>0.</span></p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.4">Пример 4.4.
+                                                </b>Высказывание <i>А</i>: «Франциск Скорина — белорусский
+                                                первопечатник». <b>Истинно, </b><i>А </i>= 1. </span></p>
+                                        <p><span style="font-size: large;">Высказывание <i>В</i>: «Стефан Баторий —
+                                                турецкий султан».<b> Ложно, </b><i>B</i> = 0.</span></p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-598"
+                                                src="img/47-300x226.jpg" alt="" width="300" height="226" /></p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-599"
+                                                src="img/48-240x300.jpg" alt="" width="240" height="300" /></p>
+                                        <p><span style="font-size: large;">Высказывание «Франциск Скорина — белорусский
+                                                первопечатник, <b>ИЛИ</b> Стефан Баторий — турецкий султан» будет
+                                                <b>истинным</b>, (<i>А </i><b>ИЛИ</b><i> В</i>) = 1.</span></p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.5">Пример
+                                                    4.5*.</b><br />Рассмотрим выражение: <i>А </i><b>ИЛИ </b><i>B
+                                                </i><b>И НЕ </b><i>С</i>. Распишем по действиям вычисление значения
+                                                логического выражения:</span></p>
+                                        <ol>
+                                            <li style="list-style-type: none;">1) <i>D</i> =<b> НЕ</b><i> С</i>;</li>
+                                            <li style="list-style-type: none;">2) <i>E </i>=<i> B </i><b>И</b> <i>D</i>;
+                                            </li>
+                                            <li style="list-style-type: none;">3) <i>F</i> = <i>А </i><b>ИЛИ</b>
+                                                <i>E</i>.
+                                            </li>
+                                            </li>
+                                        </ol>
+                                        <p><span style="font-size: large;">Значение высказывания <i>F</i>, полученное в
+                                                3-м действии, определит значение исходного логического выражения.</span>
+                                        </p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.6">Пример
+                                                    4.6*.</b><br />Пусть высказывание <i>А </i>= 1, <i>B</i> = 0, <i>С
+                                                </i>= 0. Найдем значение логического выражения: <i>А </i><b>ИЛИ</b><i> B
+                                                </i><b>И</b> <b>НЕ</b><i> С</i>.</span></p>
+                                        <ol>
+                                            <li style="list-style-type: none;">1) <i>D</i> =<b> НЕ</b><i> С </i>= 1;
+                                            </li>
+                                            <li style="list-style-type: none;">2) <i>E</i> =<i> B </i><b>И </b><i>D
+                                                </i>= 0 <b>И</b> 1 = 0;</li>
+                                            <li style="list-style-type: none;">3) <i>F</i> = <i>А </i><b>ИЛИ
+                                                </b><i>E</i> = 1 <b>ИЛИ</b> 0 = 1.</li>
+                                        </ol>
+                                        <p><span style="font-size: large;">Значит, при начальных значениях <i>А </i>= 1,
+                                                <i>B</i> = 0, <i>С </i>= 0 значение логического выражения <i>А
+                                                </i><b>ИЛИ</b><i> B </i><b>И</b> <b>НЕ</b><i> С </i>истинно.</span></p>
+                                        <p><span style="font-size: large;"><b data-ex-id="4.7">Пример 4.7.
+                                                </b>Высказывание <i>А</i>: «Прогноз погоды обещает дожди». Высказывание
+                                                <i>В</i>: «Сейчас на улице идет дождь». </span></p>
+                                        <p><span style="font-size: large;">Высказывание <i>А </i><b>И </b><i>B </i>будет
+                                                ложным, если мы увидели, что на улице нет дождя (независимо от того, что
+                                                обещал прогноз погоды).</span></p>
+                                        <p><span style="font-size: large;">Высказывание <i>А </i><b>ИЛИ </b><i>B
+                                                </i>будет истинным, если прогноз погоды обещал дождь (независимо от
+                                                того, какую погоду мы наблюдаем сейчас).</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr class="first-hr">
+                        <button class="toggle-slide button button-primary" id="21af67e300">Тесты</button>
+                        <div class="slide" id="21af67e300" style="background-color: rgb(249, 249, 249);">
+                            <p class="icons"><img class="wp-image-357 alignnone"
+                                    title="вопросы и задания для проверки знаний" src="img/question.jpg" alt=""
+                                    width="46" height="46"></p><br />
+                            <div class="exercise" data-id="12">
+                                <p><b class="number">1</b> В каких условиях составное высказывание А И В может быть
+                                    истинным?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="12-0" data-is-correct="0" name="exer-12" type="radio"
+                                            value="0"><label style="display: inline;" for="12-0">&nbsp;Если А ложно, а В
+                                            истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="12-1" data-is-correct="1" name="exer-12" type="radio"
+                                            value="1"><label style="display: inline;" for="12-1">&nbsp;Если А истинно и
+                                            В истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="12-2" data-is-correct="0" name="exer-12" type="radio"
+                                            value="2"><label style="display: inline;" for="12-2">&nbsp;Если А ложно и В
+                                            истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="12-3" data-is-correct="0" name="exer-12" type="radio"
+                                            value="3"><label style="display: inline;" for="12-3">&nbsp;Если А истинно, а
+                                            В ложно.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="12">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="13">
+                                <p><b class="number">2</b> В каких случаях составное высказывание А ИЛИ В может быть
+                                    ложным?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="13-0" data-is-correct="0" name="exer-13" type="radio"
+                                            value="0"><label style="display: inline;" for="13-0">&nbsp;Если А истинно и
+                                            В истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="13-1" data-is-correct="1" name="exer-13" type="radio"
+                                            value="1"><label style="display: inline;" for="13-1">&nbsp;Если А ложно и В
+                                            ложно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="13-2" data-is-correct="0" name="exer-13" type="radio"
+                                            value="2"><label style="display: inline;" for="13-2">&nbsp;Если А ложно, а В
+                                            истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="13-3" data-is-correct="0" name="exer-13" type="radio"
+                                            value="3"><label style="display: inline;" for="13-3">&nbsp;Если А истинно, а
+                                            В ложно.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="13">Проверить</button>
+                            </div><br><br />
+                        </div>
+                        <button class="toggle-slide button button-primary" id="9d5322e31a">Упражнения</button>
+                        <div class="slide" id="9d5322e31a" style="background-color: rgb(249, 249, 249);">
+
+                            <div class="exercises-wrapper">
+                                <b class="number-cirle">1</b> Определите, истинными или ложными являются нижеприведенные
+                                составные высказывания.</p>
+                                <ol style="padding-left: 60px;">
+                                    <li>Мяч круглый, <b>ИЛИ</b> Земля плоская.</li>
+                                    <li>Кролики — домашние животные, <b>И</b> баобаб растет в Беловежской пуще.</li>
+                                    <li>Клавиатура — устройство ввода информации, <b>ИЛИ</b> винчестер — устройство
+                                        вывода информации.</li>
+                                    <li>М. Ю. Лермонтов написал стихотворение «Парус», <b>И</b> И. А. Крылов написал
+                                        басню «Квартет».</li>
+                                    <li>Сосна — хвойное дерево, <b>И</b> кедр — не хвойное дерево.</li>
+                                    <li>Процессор — устройство обработки информации в компьютере, <b>ИЛИ</b> наушники —
+                                        не устройство ввода информации.</li>
+                                    <li>Континенты и острова — это большие участки суши.</li>
+                                </ol>
+                                <p><b class="number-cirle">2</b> О том, как прошли летние каникулы, Кира рассказала
+                                    своим друзьям следующее:</p>
+                                <ol style="padding-left: 60px;">
+                                    <li>Я была у бабушки в деревне, и рядом с деревней было озеро.</li>
+                                    <li>По озеру плавала лодка или утка.</li>
+                                    <li>Мы с бабушкой насобирали малины и смородины.</li>
+                                    <li>Я составила букет из цветов. В нем были ромашки или гвоздики.</li>
+                                </ol>
+                                <p style="padding-left: 43px;">Подготовьте к каждому из высказываний Киры рисунки,
+                                    учитывая, что все высказывания истинны.</p>
+                                <p><b class="number-cirle">3</b> Откройте файл с рисунком и разложите грибы по корзинкам
+                                    так, чтобы было истинным следующее высказывание: «В большой корзине все грибы
+                                    съедобные, и в маленькой корзине все грибы несъедобные».<br />
+                                    <img class="alignnone size-medium wp-image-600" src="img/49-300x157.jpg" alt=""
+                                        width="300" height="157" />
+                                </p>
+                                <p><b class="number-cirle">4</b> Откройте файл с рисунком и поставьте все цветы в вазы
+                                    так, чтобы было истинным высказывание: «В синей вазе все цветы розы, или в красной
+                                    вазе все цветы не красного цвета».<br />
+                                    <img class="alignnone size-medium wp-image-601" src="img/50-300x225.jpg" alt=""
+                                        width="300" height="225" />
+                                </p>
+                                <p><b class="number-cirle">5*</b> Найдите значения логических выражений, если <i>А </i>=
+                                    1, <span lang="en-US"><i>B</i></span><i> </i>= 1, <i>С </i>= 0,<span
+                                        lang="en-US"><i>D</i></span><i> </i>= 0.</p>
+                                <ol style="padding-left: 60px;">
+                                    <li><i>А </i><b>ИЛИ</b><i> B </i><b>И</b><i> </i><b>НЕ</b><i> С</i>.</li>
+                                    <li><i>А </i><b>И</b><i> </i><b>НЕ</b><i> B </i><b>ИЛИ</b><i> С</i>.</li>
+                                    <li><i>А </i><b>ИЛИ</b><i> B </i><b>И</b><i> </i><b>НЕ</b><i> </i>(<i>С
+                                        </i><b>И</b><i> </i><span lang="en-US"><i>D</i></span>).</li>
+                                    <li>(<i>А </i><b>И</b><i> B</i>)<i> </i><b>ИЛИ</b><i> </i><b>НЕ</b><i> С
+                                        </i><b>И</b><i> </i>(<i>А </i><b>ИЛИ</b><i> B</i>)<i> </i><b>ИЛИ</b><i>
+                                        </i><b>НЕ</b><i> </i><span lang="en-US"><i>D</i></span>.</li>
+                                </ol>
+                            </div>
+                            <p>
+                        </div>
+                        <hr class="last-hr">
+                    </div><!-- end .entry-content -->
+
+
+                </div><!-- end #post-## -->
+                <div id="comments">
+
+
+                </div><!-- #comments -->
+
+
+            </div><!-- end .column-content -->
+
+
+
+            <div class="column column-narrow column-last">
+
+                <div id="custom_html-2" class="widget_text widget clearfix widget_custom_html">
+                    <div class="textwidget custom-html-widget"></div>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+
+
+
+
+        </div><!-- end #content -->
+
+
+
+        <div id="footer" class="clearfix">
+
+            <section class="site-widgetized-section">
+                <div class="widgets clearfix  widgets-1">
+
+                    <style type="text/css">
+                        .qtranxs_widget ul {
+                            margin: 0;
+                        }
+
+                        .qtranxs_widget ul li {
+                            display: inline;
+                            /* horizontal list, use "list-item" or other appropriate value for vertical list */
+                            list-style-type: none;
+                            /* use "initial" or other to enable bullets */
+                            margin: 0 5px 0 0;
+                            /* adjust spacing between items */
+                            opacity: 0.5;
+                            -o-transition: 1s ease opacity;
+                            -moz-transition: 1s ease opacity;
+                            -webkit-transition: 1s ease opacity;
+                            transition: 1s ease opacity;
+                        }
+
+                        /* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */
+                        /* other way to control spacing */
+                        .qtranxs_widget ul li.active {
+                            opacity: 0.8;
+                        }
+
+                        .qtranxs_widget ul li:hover {
+                            opacity: 1;
+                        }
+
+                        .qtranxs_widget img {
+                            box-shadow: none;
+                            vertical-align: middle;
+                            display: initial;
+                        }
+
+                        .qtranxs_flag {
+                            height: 12px;
+                            width: 18px;
+                            display: block;
+                        }
+
+                        .qtranxs_flag_and_text {
+                            padding-left: 20px;
+                        }
+
+                        .qtranxs_flag span {
+                            display: none;
+                        }
+                    </style>
+                    <div id="qtranslate-2" class="widget clearfix qtranxs_widget">
+
+                        <div class="qtranxs_widget_end"></div>
+                    </div>
+                </div>
+            </section><!-- .site-widgetized-section -->
+
+
+            <p class="copy">
+
+            </p>
+        </div><!-- end #footer -->
+    </div><!-- end #wrap -->
+
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var JQLBSettings = { "fitToScreen": "0", "resizeSpeed": "400", "displayDownloadLink": "0", "navbarOnTop": "0", "loopImages": "", "resizeCenter": "", "marginSize": "0", "linkTarget": "", "help": "", "prevLinkTitle": "previous image", "nextLinkTitle": "next image", "prevLinkText": "\u00ab Previous", "nextLinkText": "Next \u00bb", "closeTitle": "close image gallery", "image": "Image ", "of": " of ", "download": "Download", "jqlb_overlay_opacity": "80", "jqlb_overlay_color": "#000000", "jqlb_overlay_close": "1", "jqlb_border_width": "10", "jqlb_border_color": "#ffffff", "jqlb_border_radius": "0", "jqlb_image_info_background_transparency": "100", "jqlb_image_info_bg_color": "#ffffff", "jqlb_image_info_text_color": "#000000", "jqlb_image_info_text_fontsize": "10", "jqlb_show_text_for_image": "1", "jqlb_next_image_title": "next image", "jqlb_previous_image_title": "previous image", "jqlb_next_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/next.gif", "jqlb_previous_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/prev.gif", "jqlb_maximum_width": "", "jqlb_maximum_height": "", "jqlb_show_close_button": "1", "jqlb_close_image_title": "close image gallery", "jqlb_close_image_max_heght": "22", "jqlb_image_for_close_lightbox": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/closelabel.gif", "jqlb_keyboard_navigation": "1", "jqlb_popup_size_fix": "0" };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/form.js' defer></script>
+    <script type='text/javascript' src='libs/lightBox2.min.js' defer></script>
+    <script type='text/javascript' src='libs/jquerymenu.js' defer></script>
+    <script type='text/javascript' src='libs/superfish.js' defer></script>
+    <script type='text/javascript' src='libs/functions.js' defer></script>
+    <script type='text/javascript' src='libs/bootstrap.min.js' defer></script>
+    <script type='text/javascript' src='libs/wp-embed.js' defer></script>
+</body>
+
+</html>

@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Информатика.&#8212; Электронное приложение к учебному пособию</title>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/informatika7.adu.by\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.22" } };
+        !function (t, a, e) { var r, i, n, o = a.createElement("canvas"), l = o.getContext && o.getContext("2d"); function c(t) { var e = a.createElement("script"); e.src = t, e.defer = e.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(e) } for (n = Array("flag", "emoji4"), e.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < n.length; i++)e.supports[n[i]] = function (t) { var e, a = String.fromCharCode; if (!l || !l.fillText) return !1; switch (l.clearRect(0, 0, o.width, o.height), l.textBaseline = "top", l.font = "600 32px Arial", t) { case "flag": return (l.fillText(a(55356, 56826, 55356, 56819), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 56826, 8203, 55356, 56819), 0, 0), e === o.toDataURL()) ? !1 : (l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), e !== o.toDataURL()); case "emoji4": return l.fillText(a(55358, 56794, 8205, 9794, 65039), 0, 0), e = o.toDataURL(), l.clearRect(0, 0, o.width, o.height), l.fillText(a(55358, 56794, 8203, 9794, 65039), 0, 0), e !== o.toDataURL() }return !1 }(n[i]), e.supports.everything = e.supports.everything && e.supports[n[i]], "flag" !== n[i] && (e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && e.supports[n[i]]); e.supports.everythingExceptFlag = e.supports.everythingExceptFlag && !e.supports.flag, e.DOMReady = !1, e.readyCallback = function () { e.DOMReady = !0 }, e.supports.everything || (r = function () { e.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", r, !1), t.addEventListener("load", r, !1)) : (t.attachEvent("onload", r), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && e.readyCallback() })), (r = e.source || {}).concatemoji ? c(r.concatemoji) : r.wpemoji && r.twemoji && (c(r.twemoji), c(r.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-quicklatex-format-css' href='css/quicklate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='crayon-css' href='css/crayon.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='css/form.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-lightbox-2.min.css-css' href='css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-css' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-style-mobile-css' href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='academica-google-font-default-css'
+        href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CRoboto+Condensed%3A400%2C700&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext&#038;ver=4.8.22'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='css/dashicons.css' type='text/css' media='all' />
+    <script type='text/javascript' src='libs/jquery.js' defer></script>
+    <script type='text/javascript' src='libs/jquery.min.js' defer></script>
+
+    <script type='text/javascript' src='libs/crayon.js' defer></script>
+    <script type='text/javascript' src='libs/common.js' defer></script>
+    <script type='text/javascript' src='libs/slide.js' defer></script>
+    <script type='text/javascript' src='libs/quicklate.js' defer></script>
+    <!-- <link rel='https://api.w.org/' href='http://informatika7.adu.by/index.php?rest_route=/' /> -->
+    <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://informatika7.adu.by/xmlrpc.php?rsd" /> -->
+    <!-- <link rel="wlwmanifest" type="application/wlwmanifest+xml" -->
+    <!-- href="http://informatika7.adu.by/wp-includes/wlwmanifest.xml" /> -->
+    <!-- <link rel="canonical" href="http://informatika7.adu.by/" /> -->
+    <!-- <!~~ <link rel='shortlink' href='http://informatika7.adu.by/' /> ~~> -->
+    <!-- <link rel="alternate" type="application/json+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F" /> -->
+    <!-- <link rel="alternate" type="text/xml+oembed" -->
+    <!-- href="http://informatika7.adu.by/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Finformatika7.adu.by%2F&#038;format=xml" /> -->
+
+    <link hreflang="ru" href="http://informatika7.adu.by/?lang=ru" rel="alternate" />
+
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" defer
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+
+    <script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js" defer></script>
+
+    <style>
+        .ui-widget-shadow {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript" src="libs/jquery-touch.js" defer></script>
+    <script type="text/javascript" src="libs/themeCommon.js" defer></script>
+
+
+
+</head>
+
+
+
+
+<body class="home page-template-default page page-id-290">
+
+    <a class="toggle-sidebar-right toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+    <a class="toggle-sidebar-left toggle-sidebar">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+
+
+
+
+    <!-- style="background-image: url('');" -->
+    <div id="header" class="clearfix" style="background-image: url('img/logo.jpg');">
+        <div class="inner-wrap">
+
+            <div id="logo" class="logo-left">
+
+                <h1 id="site-title">
+
+                    <a href="index.html" title="Информатика" rel="home">
+                        Информатика</a>
+                </h1>
+                <p id="site-description">Электронное приложение к учебному пособию</p>
+            </div><!-- end #logo -->
+
+            <div id="change-size">
+
+                <a class="minus" style="font-size: 14px;">A</a> / <a class="plus">A</a>
+
+            </div><!-- end #search -->
+
+            <button type="button" class="btn btn-primary openModal" data-toggle="modal" data-target="#exampleModal"
+                style="background-color: #007bff00; border-color: #007bff00;"><img
+                    src="/wp-content/themes/academica/images/mail-icon.png" alt="" width="28"></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Напишите нам</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div role="form" class="wpcf7" id="wpcf7-f1825-o1" lang="ru-RU" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/#wpcf7-f1825-o1" method="post" class="wpcf7-form"
+                                    novalidate="novalidate">
+                                    <div style="display: none;">
+                                        <input type="hidden" name="_wpcf7" value="1825" />
+                                        <input type="hidden" name="_wpcf7_version" value="4.9.2" />
+                                        <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1825-o1" />
+                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                    </div>
+                                    <p><label> Сообщение:<br />
+                                            <span class="wpcf7-form-control-wrap your-message"><textarea
+                                                    name="your-message" cols="40" rows="10"
+                                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                    aria-required="true" aria-invalid="false"></textarea></span>
+                                        </label></p>
+                                    <p><input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                                    </p>
+                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="popover-info"
+                data-content="<p><span >Материал учебного пособия разделен на две колонки. Цвет фона поможет вам разобраться в назначении размещенной на этом фоне информации:</span></p><p><span ><span class='info-white'>белый</span> — основные материалы, обязательные для изучения;</span></p><p><span ><span class='info-blue'>голубой</span> — примеры, иллюстрирующие основные материалы;</span></p><p><span ><span class='info-yellow' style='display: inline-block;'>желтый</span> — определения основных понятий;</span></p><p><span ><span class='info-green'>светло-зеленый</span> — исторические сведения, информация об ученых, внесших вклад в развитие информатики, и другие интересные факты.</span></p><p><span >В учебном пособии используются следующие условные обозначения:</span></p><p><span ><img class='wp-image-357 alignnone' src='http://informatika7.adu.by/wp-content/uploads/2017/08/Г_1.jpg' alt='' width='46' height='46' /> — вопросы и задания для проверки знаний;</span></p><p><span ><img class='alignnone wp-image-355' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image2_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых используется компьютер;</span></p><p><span ><img class='alignnone wp-image-356' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image3_1.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания для выполнения в тетради;</span></p><p><span ><img class='alignnone wp-image-358' src='http://informatika7.adu.by/wp-content/uploads/2017/08/image4.jpg' alt='' width='46' height='46' /> — раздел «Упражнения» содержит задания, при выполнении которых может быть использована информация, размещенная на Национальном образовательном портале;</span></p><p>* — задание или пример для любознательных.</p>"
+                data-placement="bottom"></div>
+        </div><!-- end .inner-wrap -->
+    </div><!-- end #header -->
+
+    <div id="wrap">
+
+        <div id="content" class="clearfix">
+
+            <div class="column column-title">
+                <div id="crumbs">
+                    <p></p>
+                </div><!-- end #crumbs -->
+            </div><!-- end .column-title -->
+
+            <div class="column column-narrow">
+                <div class="widget widget-text wp_widget_plugin_box widget_wp_my_plugin" id="wp_my_plugin-2">
+                    <ul class="vw-navigation">
+                        <li><a href="index.html">От авторов</a></li>
+                        <li>
+                            <a>Глава 1. Информация и информационные процессы</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page2.html">§ 1. Информация в жизни человека</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page2.html#1.1">1.1. Виды информации</a>
+                                        </li>
+                                        <li><a href="page2.html#1.2">1.2. Носители
+                                                информации</a></li>
+                                        <li><a href="page2.html#1.3">1.3. Информационные
+                                                процессы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page3.html">§ 2. Представление информации в
+                                        компьютере</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#2.1">2.1. Кодирование
+                                                информации</a></li>
+                                        <li><a href="page3.html#2.2">2.2. Единицы измерения
+                                                объема информации</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 2. Представление о логике высказываний.</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page3.html">§ 3. Логика высказываний</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page3.html#3.1">3.1. Понятие
+                                                высказывания</a></li>
+                                        <li><a href="page3.html#3.2">3.2. Логическая
+                                                операция НЕ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page4.html">§ 4. Логические операции И и
+                                        ИЛИ</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page4.html#4.1">4.1. Логическая
+                                                операция И</a></li>
+                                        <li><a href="page4.html#4.2">4.2. Логическая
+                                                операция ИЛИ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page5.html">§ 5. Множества</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page5.html#5.1">5.1. Понятие
+                                                множества</a></li>
+                                        <li><a href="page5.html#5.2">5.2. Понятие
+                                                подмножества</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page6.html">§ 6. Операции над множествами</a>
+                                </li>
+                                <li>
+                                    <a href="page7.html">§ 7. Использование логических
+                                        операций для построения поисковых запросов в Интернете</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page7.html#7.1">7.1. Поиск информации
+                                                в Интернете</a></li>
+                                        <li><a href="page7.html#7.2">7.2. Сокращение
+                                                области поиска</a></li>
+                                        <li><a href="page7.html#7.3">7.3. Использование
+                                                операторов в поисковых запросах</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Глава 3. Основные алгоритмические конструкции</a>
+                            <ul class="vw-chapter">
+                                <li>
+                                    <a href="page8.html">§ 8. Алгоритмы и исполнители</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page8.html#8.1">8.1. Понятие
+                                                алгоритма</a></li>
+                                        <li><a href="page8.html#8.2">8.2. Исполнитель
+                                                Чертежник</a></li>
+                                        <li><a href="page8.html#8.3">8.3. Алгоритмическая
+                                                конструкция следование</a></li>
+                                        <li><a href="page8.html#8.4">8.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page9.html">§ 9. Исполнитель Робот</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page9.html#9.1">9.1. Роботы в жизни
+                                                человека</a></li>
+                                        <li><a href="page9.html#9.2">9.2. Среда обитания и
+                                                система команд исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.3">9.3. Использование
+                                                алгоритмической конструкции следование для исполнителя Робот</a></li>
+                                        <li><a href="page9.html#9.4">9.4. Вспомогательные
+                                                алгоритмы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page10.html">§ 10. Алгоритмическая конструкция
+                                        повторение</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page10.html#10.1">10.1. Алгоритмы с
+                                                циклами</a></li>
+                                        <li><a href="page10.html#10.2">10.2. Использование
+                                                команды цикла с параметром для исполнителя Робот</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page11.html">§ 11. Использование условий</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page11.html#11.1">11.1. Понятие
+                                                условия</a></li>
+                                        <li><a href="page11.html#11.2">11.2. Цикл с
+                                                предусловием</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page12.html">§ 12. Алгоритмическая конструкция
+                                        ветвление</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page12.html#12.1">12.1. Команда
+                                                ветвления</a></li>
+                                        <li><a href="page12.html#12.2">12.2. Составные
+                                                условия</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="page13.html">§ 13. Использование основных
+                                        алгоритмических конструкций для исполнителя Робот</a></li>
+                                <li>
+                                    <a href="page14.html">§ 14. Язык программирования
+                                        Паскаль</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page14.html#14.1">14.1. Команда
+                                                вывода</a></li>
+                                        <li><a href="page14.html#14.2">14.2. Понятие типа
+                                                данных</a></li>
+                                        <li><a href="page14.html#14.3">14.3. Оператор
+                                                присваивания</a></li>
+                                        <li><a href="page14.html#14.4">14.4. Ввод данных</a>
+                                        </li>
+                                        <li><a href="page14.html#14.5">14.5. Структура
+                                                программы</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="page15.html">§ 15. Организация вычислений</a>
+                                    <ul class="vw-sub">
+                                        <li><a href="page15.html#15.1">15.1. Вычисление
+                                                значения арифметического выражения</a></li>
+                                        <li><a href="page15.html#15.2">15.2. Использование
+                                                языка программирования для решения задач</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=189">§ 16. Реализация алгоритмов работы -->
+                                <!-- с целочисленными данными</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.1">16.1. Целочисленный -->
+                                <!-- тип данных</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=189#16.2">16.2. Использование -->
+                                <!-- целочисленных данных для решения задач</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 4. Аппаратное и программное обеспечение компьютера</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=191">§ 17. Современные компьютерные -->
+                                <!-- устройства</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.1">17.1. Различные виды -->
+                                <!-- компьютеров</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=191#17.2">17.2. Назначение -->
+                                <!-- устройств персонального компьютера</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=193">§ 18. Операционная система</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.1">18.1. Основные виды -->
+                                <!-- операционных систем</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.2">18.2. Элементы -->
+                                <!-- графического пользовательского интерфейса</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.3">18.3. Основные -->
+                                <!-- элементы файловой системы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=193#18.4">18.4. Типовые -->
+                                <!-- операции с файлами и папками</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=195">§ 19. Локальная компьютерная -->
+                                <!-- сеть</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=197">§ 20. Архивация</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.1">20.1. -->
+                                <!-- Программы-архиваторы</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=197#20.2">20.2. Создание -->
+                                <!-- архивов и извлечение файлов из архива</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=199">§ 21. Программное обеспечение</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.1">21.1. Классификация -->
+                                <!-- программного обеспечения</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=199#21.2">21.2. Вредоносные -->
+                                <!-- программы и способы защиты от них</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a>Глава 5. Работа с векторной графикой</a> -->
+                                <!-- <ul class="vw-chapter"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=201">§ 22. Понятие векторной -->
+                                <!-- графики</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=203">§ 23. Интерфейс векторного -->
+                                <!-- графического редактора</a></li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=205">§ 24. Создание и редактирование -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.1">24.1. Создание -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.2">24.2. Редактирование -->
+                                <!-- фигур</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.3">24.3. Обводка и -->
+                                <!-- заливка</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=205#24.4">24.4. Работа с -->
+                                <!-- цветом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li> -->
+                                <!-- <a href="http://informatika7.adu.by/?page_id=207">§ 25. Операции над объектами -->
+                                <!-- векторного изображения</a> -->
+                                <!-- <ul class="vw-sub"> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.1">25.1. Копирование, -->
+                                <!-- выравнивание и взаимное расположение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=207#25.2">25.2. Группировка. -->
+                                <!-- Операции объединения объектов</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=209">§ 26. Работа с текстом</a></li> -->
+                                <!-- </ul> -->
+                                <!-- </li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=294">Приложение</a></li> -->
+                                <!-- <li><a href="http://informatika7.adu.by/?page_id=288">Глоссарий</a></li> -->
+                            </ul>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+            <div class="column column-content single">
+
+
+                <div id="post-179" class="post-179 page type-page status-publish hentry">
+
+                    <h1 class="title-header">§ 11. Использование условий</h1>
+                    <div class="entry-content clearfix">
+                        <h3 class="western" id="11.1"><a name="_Toc479265989"></a>11.1. Понятие условия</h3>
+                        <p><span style="font-size: large;">В жизни человека принятие решений зачастую зависит от
+                                различных условий. Если на улице идет дождь, то нужно взять с собой зонтик; если хорошо
+                                подготовился к уроку, то получишь высокую отметку, иначе низкую; пока не выполнил
+                                домашнее задание, не будешь развлекаться и др. </span></p>
+                        <p><span style="font-size: large;">Человек способен понимать условия, сформулированные в
+                                произвольной форме. Но для того чтобы Робот или другой исполнитель мог принимать
+                                решения, нужно «научить» его «понимать» условия.</span></p>
+                        <p><span style="font-size: large;" class="info-yellow"><b>Условием</b> для исполнителя является
+                                понятное исполнителю высказывание, которое может быть истинным (соблюдаться) либо быть
+                                ложным (не соблюдаться).</span></p>
+                        <p><span style="font-size: large;">Исполнитель может проверить истинность условий, входящих в
+                                его систему условий.</span></p>
+                        <p><span style="font-size: large;">Рассмотрим систему условий для учебного компьютерного
+                                исполнителя Робот.</span></p>
+                        <p>&nbsp;</p>
+                        <table width="362" cellspacing="0" cellpadding="7">
+                            <colgroup>
+                                <col width="137" />
+                                <col width="195" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td width="137" height="18">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">WallFromLeft</span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если слева от Робота
+                                                стена</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">WallFrom</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Right</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если справа от Робота
+                                                стена</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">WallFrom</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Up</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если сверху от Робота
+                                                стена</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">WallFrom</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Down</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если снизу от Робота
+                                                стена</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Free</span></span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">FromLeft</span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если слева от Робота
+                                                свободно</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Free</span></span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">From</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Right</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если справа от Робота
+                                                свободно</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Free</span></span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">From</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Up</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если сверху от Робота
+                                                свободно</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Free</span></span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;">From</span></span><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">Down</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если снизу от Робота
+                                                свободно</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="19">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">CellIsPainted</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если ячейка, в которой
+                                                находится Робот, закрашена</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="137" height="18">
+                                        <p align="left"><span style="font-size: large;"><span
+                                                    style="font-family: 'Courier New', serif;"><span
+                                                        style="font-size: small;"><span
+                                                            lang="en-US">CellIsFree</span></span></span></span></p>
+                                    </td>
+                                    <td valign="top" width="195">
+                                        <p align="left"><span style="font-size: large;">Истинно, если ячейка, в которой
+                                                находится Робот, не закрашена</span></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><span style="font-size: large;">Образцы истинных и ложных условий для исполнителя Робот
+                                представлены в <a class="nav-ex" data-id="11.1">примере 11.1</a>.</span></p>
+                        <h3 class="western" id="11.2"><a name="_Toc479265990"></a> 11.2. Цикл с предусловием</h3>
+                        <p><span style="font-size: large;">Цикл с параметром используется при составлении алгоритма в
+                                том случае, когда заранее известно количество повторений. Однако часто до выполнения
+                                цикла количество повторений не известно.</span></p>
+                        <p><span style="font-size: large;"><b>Пример 11.2. </b>Вы с родителями пошли в лес собирать
+                                грибы. Ваши действия можно описать командами: найти гриб, срезать гриб, положить гриб в
+                                корзину. Эти действия будут выполняться в цикле, но вы заранее не знаете, сколько грибов
+                                поместится в корзину. Поэтому следует говорить не о количестве повторений (количестве
+                                грибов), а об условии, при котором вы будете продолжать сбор грибов: пока корзина не
+                                заполнена.</span></p>
+                        <p><span style="font-size: large;" class="info-yellow">Алгоритмическая конструкция <b>цикл с
+                                    предусловием (цикл «пока») </b>— способ организации цикла, при котором количество
+                                выполнений команд тела цикла зависит от истинности или ложности условия цикла. </span>
+                        </p>
+                        <p><span style="font-size: large;">Цикл с предусловием используется в том случае, когда
+                                количество повторений тела цикла заранее не известно, но известно условие продолжения
+                                работы.</span></p>
+                        <p class="western"><span style="font-size: large;">Условие цикла определяет, как долго будет
+                                выполняться цикл. Пока условие истинно, выполняются команды, составляющие тело цикла.
+                                Цикл прекращает выполняться тогда, когда условие становится ложным. Цикл с предусловием
+                                имеет такое название, поскольку проверка условия предваряет выполнение команд тела
+                                цикла.</span></p>
+                        <p class="western"><span style="font-size: large;">Алгоритмическая конструкция цикла с
+                                предусловием может изображаться на блок-схеме следующим образом:</span></p>
+                        <p><img class="alignnone size-medium wp-image-691" src="img/136-300x220.jpg" alt="" width="300"
+                                height="220" /></p>
+                        <p><span style="font-size: large;">В данной конструкции в прямоугольнике(ах) записываются
+                                повторяющиеся команды алгоритма (тело цикла), которые совершаются, пока верно условие
+                                (Да). При этом после каждого выполнения команд тела цикла происходит проверка, истинно
+                                ли условие. Как только условие станет ложным (Нет), цикл завершается. Если условие сразу
+                                ложно, то цикл не выполнится ни разу. </span></p>
+                        <p><span style="font-size: large;" class="info-yellow">Если условие в цикле будет всегда истинно
+                                (всегда Да), то такой цикл не сможет завершиться. Возникшую ситуацию называют
+                                <b>зацикливанием</b>.</span></p>
+                        <p><span style="font-size: large;">Для записи цикла с предусловием используется команда <span
+                                    lang="en-US"><b>while</b></span>. Формат записи команды следующий:</span></p>
+                        <p align="left"><span style="font-family: 'Courier New', serif;"><span
+                                    style="font-size: small;"><span style="font-size: large;"><span
+                                            lang="en-US"><b>while</b></span></span></span></span><span
+                                style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                        style="font-size: large;"><b> &lt;</b></span></span></span><span
+                                style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                        style="font-size: large;">условие</span></span></span><span
+                                style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                        style="font-size: large;"><b>&gt;</b></span></span></span> <span
+                                style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                        style="font-size: large;"><span
+                                            lang="en-US"><b>do</b></span></span></span></span></p>
+                        <p align="left"><span style="font-family: 'Courier New', serif;"><span
+                                    style="font-size: small;"><span style="font-size: large;"><span
+                                            lang="en-US"><b>begin</b></span></span></span></span></p>
+                        <p align="left"><span style="font-family: 'Courier New', serif;"><span
+                                    style="font-size: small;"><span style="font-size: large;">тело
+                                        цикла;</span></span></span></p>
+                        <p align="left"><span style="font-family: 'Courier New', serif;"><span
+                                    style="font-size: small;"><span style="font-size: large;"><span
+                                            lang="en-US"><b>end</b></span></span></span></span><span
+                                style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                        style="font-size: large;">;</span></span></span></p>
+                        <p><span style="font-size: large;">Строка <span style="font-family: 'Courier New', serif;"><span
+                                        style="font-size: small;"><span
+                                            lang="en-US"><b>while</b></span></span></span><span
+                                    style="font-family: 'Courier New', serif;"><span style="font-size: small;"><b>
+                                            &lt;</b></span></span><span style="font-family: 'Courier New', serif;"><span
+                                        style="font-size: small;">условие</span></span><span
+                                    style="font-family: 'Courier New', serif;"><span
+                                        style="font-size: small;"><b>&gt;</b></span></span> <span
+                                    style="font-family: 'Courier New', serif;"><span style="font-size: small;"><span
+                                            lang="en-US"><b>do</b></span></span></span><b> </b>является заголовком
+                                цикла. Эту строку можно прочитать следующим образом: «Пока верно условие, делай».
+                                Команды <span style="font-family: 'Courier New', serif;"><span
+                                        style="font-size: small;"><b>begin</b></span></span> и <span
+                                    style="font-family: 'Courier New', serif;"><span
+                                        lang="en-US"><b>end</b></span></span><span
+                                    style="font-family: 'Courier New', serif;"><span lang="en-US">;</span></span> в
+                                данном случае играют роль операторных скобок.</span></p>
+                        <p><span style="font-size: large;"><b>Пример 11.3. </b>Напишем программу для решения задачи
+                                <span lang="en-US">w</span>2 из встроенного задачника. </span></p>
+                        <p><span style="font-size: large;">Робот должен закрасить коридор переменной длины.</span></p>
+                        <p><span style="font-size: large;">В данной задаче нам не известна длина коридора, но известно,
+                                что Робот может двигаться, пока справа пусто, и закрашивать клетки:</span></p>
+                        <p><span style="font-size: large;"><b>Пока</b> справа пусто, <b>повторять</b></span></p>
+                        <p><span style="font-size: large;">закрасить;</span></p>
+                        <p><span style="font-size: large;">вправо.</span></p>
+                        <p><span style="font-size: large;">После прохода всего коридора Робот должен закрасить последнюю
+                                клетку. Это действие происходит после выполнения цикла, так как для последней клетки
+                                условие «справа пусто» уже не выполняется.</span></p>
+                        <p><span style="font-size: large;"><b>Пример 11.4. </b>Напишем программу для решения следующей
+                                задачи. Робот находится в верхнем левом углу поля. Снизу от Робота вдоль всего поля
+                                расположена горизонтальная линия с проходом в одну клетку. Составить алгоритм, выполнив
+                                который Робот<b> </b>сможет пройти через проход и закрасить клетку. Расположение прохода
+                                заранее не известно. </span></p>
+                        <p><span style="font-size: large;">Мы знаем, что проход не ограничен стеной снизу. Робот может
+                                двигаться вправо до тех пор, пока внизу есть стена:</span></p>
+                        <p><span style="font-size: large;"><b>Пока</b> снизу стена, <b>повторять</b></span></p>
+                        <p><span style="font-size: large;">вправо.</span></p>
+                        <p><span style="font-size: large;">Робот остановится в той клетке, у которой снизу нет стены.
+                                После этого Робот должен сдвинуться вниз и закрасить клетку.</span></p>
+                        <table style="width:100%" class="info-green right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="western" align="center"><i><b>Примеры </b></i>
+                                            <i><b>использования<br />
+                                                    условий</b></i>
+                                        </p>
+                                        <p class="western"><b>А. </b> Правила дорожного движения</p>
+                                        <p class="western">Если горит зеленый свет, можно переходить улицу.</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-684"
+                                                src="img/130-300x169.jpg" alt="" width="300" height="169"></p>
+                                        <p><b>Б.</b> Фольклор</p>
+                                        <p>Выбор пути сказочными героями.</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-685"
+                                                src="img/131_1-300x232.jpg" alt="" width="300" height="232"></p>
+                                        <p class="western">В. Васнецов. «Витязь на распутье». 1882 г.</p>
+                                        <p><b>В. </b> Математика</p>
+                                        <p class="western">Треугольник существует, если для большей стороны <i>a</i>
+                                            выполняется неравенство <i>a</i> <i>&nbsp;<span
+                                                    style="font-family: Symbol, serif;">&lt;</span></i> &nbsp; <i>b</i>
+                                            <i>&nbsp;</i> +&nbsp; <i>c</i> .
+                                        </p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-686"
+                                                src="img/131_2-300x78.jpg" alt="" width="300" height="78"></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width:100%" class="info-blue right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="western"><b data-ex-id="11.1">Пример 11.1. </b> Рассмотрим начальную
+                                            обстановку поля Робота:</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-687"
+                                                src="img/132-300x234.jpg" alt="" width="300" height="234"></p>
+                                        <p class="western">Для Робота будут истинны следующие условия:</p>
+                                        <p class="western">WallFromLeft</p>
+                                        <p class="western">WallFromUp</p>
+                                        <p class="western">FreeFromRight</p>
+                                        <p class="western">FreeFromDown</p>
+                                        <p class="western">CellIsPainted</p>
+                                        <p class="western"> Ложными будут условия :</p>
+                                        <p class="western">WallFromRight</p>
+                                        <p class="western">WallFromDown</p>
+                                        <p class="western">FreeFromLeft</p>
+                                        <p class="western">FreeFromUp</p>
+                                        <p class="western">CellIsFree</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table style="width:100%" class="info-blue right-panel">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="western"><b>Пример 11.2. </b> Сбор грибов.</p>
+                                        <p class="western">Использование цикла с параметром при составлении алгоритма
+                                            решения этой задачи может привести к разным результатам.</p>
+                                        <p class="western">Корзина может быть полупустой, или не все найденные грибы в
+                                            нее поместятся.</p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-688"
+                                                src="img/133-300x193.jpg" alt="" width="300" height="193"><img
+                                                class="alignnone size-medium wp-image-689" src="img/134-276x300.jpg"
+                                                alt="" width="276" height="300"></p>
+                                        <p class="western">Если использовать цикл с предусловием, то в результате домой
+                                            можно унести полную корзину грибов.</p>
+                                        <p class="center"><img class="have-wide alignnone size-medium wp-image-690"
+                                                src="img/135-123x300.jpg" alt="" width="123" height="300"></p>
+                                        <p class="western">Российский академик Андрей Андреевич Марков (младший)
+                                            (1903—1979) в своих исследованиях в области теории алгоритмов показал, что в
+                                            общем случае алгоритмы должны содержать предписания двух видов:</p>
+                                        <ol>
+                                            <li style="list-style-type: none;">
+                                                <ol>
+                                                    <li><span style="font-size: large;">функциональные операторы,
+                                                            направленные непосредственно на преобразование
+                                                            информации;</span></li>
+                                                    <li><span style="font-size: large;">логические операторы,
+                                                            определяющие дальнейшее направление действий.</span></li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        <p class="center"><img class="alignnone size-medium wp-image-693"
+                                                src="img/138-300x234.jpg" alt="" width="300" height="234"></p>
+                                        <p class="western">Если применить вышесказанное к компьютерным исполнителям, то
+                                            предписания первого вида составляют систему команд исполнителя, а
+                                            предписания второго вида&nbsp;— систему условий исполнителя.</p>
+                                        <p class="western"><b>Пример 11.3. </b> Одна из возможных начальных обстановок:
+                                        </p>
+                                        <p class="western">Программа для исполнителя Робот:</p>
+                                        <p class="western" align="left">
+                                        </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                        <div id="crayon-646f6c724af45349947515"
+                                            class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                            data-settings=" minimize scroll-mouseover"
+                                            style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                            <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                                style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                <span class="crayon-title"></span>
+                                                <div class="crayon-tools"
+                                                    style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                    <div class="crayon-button crayon-nums-button"
+                                                        title="Toggle Line Numbers">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-plain-button"
+                                                        title="Toggle Plain Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-wrap-button"
+                                                        title="Toggle Line Wrap">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-copy-button" title="Copy">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-popup-button"
+                                                        title="Open Code In New Window">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div><span class="crayon-language">Delphi/Pascal</span>
+                                                </div>
+                                            </div>
+                                            <div class="crayon-info"
+                                                style="min-height: 16.8px !important; line-height: 16.8px !important;">
+                                            </div>
+                                            <div class="crayon-plain-wrap"><textarea wrap="soft"
+                                                    class="crayon-plain print-no" data-settings="dblclick" readonly
+                                                    style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+uses Robot;
+begin 
+Task(‘w2’);
+while FreeFromRight do
+begin
+paint;
+right;
+end; 
+paint;
+end. </textarea></div>
+                                            <div class="crayon-main" style="">
+                                                <table class="crayon-table">
+                                                    <tr class="crayon-row">
+                                                        <td class="crayon-nums " data-settings="show">
+                                                            <div class="crayon-nums-content"
+                                                                style="font-size: 12px !important; line-height: 15px !important;">
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af45349947515-1">1</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af45349947515-2">2</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af45349947515-3">3</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af45349947515-4">4</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af45349947515-5">5</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af45349947515-6">6</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af45349947515-7">7</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af45349947515-8">8</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af45349947515-9">9</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af45349947515-10">10
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="crayon-code">
+                                                            <div class="crayon-pre"
+                                                                style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af45349947515-1"><span
+                                                                        class="crayon-r">uses</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">Robot</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af45349947515-2"><span
+                                                                        class="crayon-st">begin</span><span
+                                                                        class="crayon-h"> </span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af45349947515-3"><span
+                                                                        class="crayon-e">Task</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-i">w2</span>’<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af45349947515-4"><span
+                                                                        class="crayon-st">while</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-e">FreeFromRight </span><span
+                                                                        class="crayon-st">do</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af45349947515-5"><span
+                                                                        class="crayon-st">begin</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af45349947515-6"><span
+                                                                        class="crayon-v">paint</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af45349947515-7"><span
+                                                                        class="crayon-v">right</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af45349947515-8"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-sy">;</span><span
+                                                                        class="crayon-h"> </span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af45349947515-9"><span
+                                                                        class="crayon-v">paint</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af45349947515-10"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-sy">.</span><span
+                                                                        class="crayon-h"> </span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- [Format Time: 0.0014 seconds] -->
+                                        <p>
+                                        </p>
+                                        <p class="western"><b>Пример 11.4. </b> Одна из возможных начальных обстановок:
+                                        </p>
+                                        <p class="center"><img class="alignnone size-medium wp-image-694"
+                                                src="img/139-300x234.jpg" alt="" width="220"></p>
+                                        <p></p>
+                                        <p class="western">Программа для исполнителя Робот:</p>
+                                        <p class="western" align="left">
+                                        </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                        <div id="crayon-646f6c724af69504077676"
+                                            class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                            data-settings=" minimize scroll-mouseover"
+                                            style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                            <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                                style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                <span class="crayon-title"></span>
+                                                <div class="crayon-tools"
+                                                    style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                                    <div class="crayon-button crayon-nums-button"
+                                                        title="Toggle Line Numbers">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-plain-button"
+                                                        title="Toggle Plain Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-wrap-button"
+                                                        title="Toggle Line Wrap">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-copy-button" title="Copy">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div>
+                                                    <div class="crayon-button crayon-popup-button"
+                                                        title="Open Code In New Window">
+                                                        <div class="crayon-button-icon"></div>
+                                                    </div><span class="crayon-language">Delphi/Pascal</span>
+                                                </div>
+                                            </div>
+                                            <div class="crayon-info"
+                                                style="min-height: 16.8px !important; line-height: 16.8px !important;">
+                                            </div>
+                                            <div class="crayon-plain-wrap"><textarea wrap="soft"
+                                                    class="crayon-plain print-no" data-settings="dblclick" readonly
+                                                    style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+uses Robot, RobTasks;
+begin
+Task(‘myrob3’);
+while WallFromDown do
+right;
+down;
+paint;
+end.</textarea></div>
+                                            <div class="crayon-main" style="">
+                                                <table class="crayon-table">
+                                                    <tr class="crayon-row">
+                                                        <td class="crayon-nums " data-settings="show">
+                                                            <div class="crayon-nums-content"
+                                                                style="font-size: 12px !important; line-height: 15px !important;">
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af69504077676-1">1</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af69504077676-2">2</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af69504077676-3">3</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af69504077676-4">4</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af69504077676-5">5</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af69504077676-6">6</div>
+                                                                <div class="crayon-num"
+                                                                    data-line="crayon-646f6c724af69504077676-7">7</div>
+                                                                <div class="crayon-num crayon-striped-num"
+                                                                    data-line="crayon-646f6c724af69504077676-8">8</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="crayon-code">
+                                                            <div class="crayon-pre"
+                                                                style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af69504077676-1"><span
+                                                                        class="crayon-r">uses</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">Robot</span><span
+                                                                        class="crayon-sy">,</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-v">RobTasks</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af69504077676-2"><span
+                                                                        class="crayon-st">begin</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af69504077676-3"><span
+                                                                        class="crayon-e">Task</span><span
+                                                                        class="crayon-sy">(</span>‘<span
+                                                                        class="crayon-i">myrob3</span>’<span
+                                                                        class="crayon-sy">)</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af69504077676-4"><span
+                                                                        class="crayon-st">while</span><span
+                                                                        class="crayon-h"> </span><span
+                                                                        class="crayon-e">WallFromDown </span><span
+                                                                        class="crayon-st">do</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af69504077676-5"><span
+                                                                        class="crayon-v">right</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af69504077676-6"><span
+                                                                        class="crayon-v">down</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line"
+                                                                    id="crayon-646f6c724af69504077676-7"><span
+                                                                        class="crayon-v">paint</span><span
+                                                                        class="crayon-sy">;</span></div>
+                                                                <div class="crayon-line crayon-striped-line"
+                                                                    id="crayon-646f6c724af69504077676-8"><span
+                                                                        class="crayon-st">end</span><span
+                                                                        class="crayon-sy">.</span></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- [Format Time: 0.0009 seconds] -->
+                                        <p><br /> Результат работы :</p>
+                                        <p>_________________</p>
+                                        <p style="text-align:left"><img class="alignnone size-medium wp-image-695"
+                                                src="img/140-300x234.jpg" alt="" width="220"></p>
+                                        <p></p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr class="first-hr">
+                        <button class="toggle-slide button button-primary" id="8f0631a883">Тесты</button>
+                        <div class="slide" id="8f0631a883" style="background-color: rgb(249, 249, 249);">
+                            <p class="icons"><img class="wp-image-357 alignnone"
+                                    title="вопросы и задания для проверки знаний"
+                                    src="/wp-content/uploads/2017/08/Г_1.jpg" alt="" width="46" height="46"></p><br />
+                            <div class="exercise" data-id="32">
+                                <p><b class="number">1</b> Что понимают под условием для исполнителя?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="32-0" data-is-correct="1" name="exer-32" type="radio"
+                                            value="0"><label style="display: inline;" for="32-0">&nbsp;Понятное
+                                            исполнителю высказывание, которое может быть истинным либо ложным.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="32-1" data-is-correct="0" name="exer-32" type="radio"
+                                            value="1"><label style="display: inline;" for="32-1">&nbsp;Ложное
+                                            высказывание.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="32-2" data-is-correct="0" name="exer-32" type="radio"
+                                            value="2"><label style="display: inline;" for="32-2">&nbsp;Любая команда
+                                            исполнителя, которую он может выполнить в своей среде обитания.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="32-3" data-is-correct="0" name="exer-32" type="radio"
+                                            value="3"><label style="display: inline;" for="32-3">&nbsp;Истинное
+                                            высказывание.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="32">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="33">
+                                <p><b class="number">2</b> Выберите из списка условия проверки наличия стены для
+                                    компьютерного исполнителя Робот</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-0" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="0"><label style="display: inline;"
+                                            for="33-0">&nbsp;FreeFromLeft.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-1" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="1"><label style="display: inline;"
+                                            for="33-1">&nbsp;FreeFromUp.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-2" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="2"><label style="display: inline;"
+                                            for="33-2">&nbsp;CellIsPainted.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-3" data-is-correct="1" name="exer-33" type="checkbox"
+                                            value="3"><label style="display: inline;"
+                                            for="33-3">&nbsp;WallFromUp.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-4" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="4"><label style="display: inline;"
+                                            for="33-4">&nbsp;FreeFromRight.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-5" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="5"><label style="display: inline;"
+                                            for="33-5">&nbsp;CellIsFree.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-6" data-is-correct="1" name="exer-33" type="checkbox"
+                                            value="6"><label style="display: inline;"
+                                            for="33-6">&nbsp;WallFromLeft.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-7" data-is-correct="1" name="exer-33" type="checkbox"
+                                            value="7"><label style="display: inline;"
+                                            for="33-7">&nbsp;WallFromRight.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-8" data-is-correct="0" name="exer-33" type="checkbox"
+                                            value="8"><label style="display: inline;"
+                                            for="33-8">&nbsp;FreeFromDown.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="33-9" data-is-correct="1" name="exer-33" type="checkbox"
+                                            value="9"><label style="display: inline;"
+                                            for="33-9">&nbsp;WallFromDown.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="33">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="34">
+                                <p><b class="number">3</b> Выберите из списка условия проверки отсутствия стены для
+                                    компьютерного исполнителя Робот</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-0" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="0"><label style="display: inline;"
+                                            for="34-0">&nbsp;WallFromRight.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-1" data-is-correct="1" name="exer-34" type="checkbox"
+                                            value="1"><label style="display: inline;"
+                                            for="34-1">&nbsp;FreeFromLeft.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-2" data-is-correct="1" name="exer-34" type="checkbox"
+                                            value="2"><label style="display: inline;"
+                                            for="34-2">&nbsp;FreeFromDown.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-3" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="3"><label style="display: inline;"
+                                            for="34-3">&nbsp;WallFromUp.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-4" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="4"><label style="display: inline;"
+                                            for="34-4">&nbsp;WallFromDown.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-5" data-is-correct="1" name="exer-34" type="checkbox"
+                                            value="5"><label style="display: inline;"
+                                            for="34-5">&nbsp;FreeFromRight.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-6" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="6"><label style="display: inline;"
+                                            for="34-6">&nbsp;CellIsPainted.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-7" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="7"><label style="display: inline;"
+                                            for="34-7">&nbsp;WallFromLeft.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-8" data-is-correct="1" name="exer-34" type="checkbox"
+                                            value="8"><label style="display: inline;"
+                                            for="34-8">&nbsp;FreeFromUp.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="34-9" data-is-correct="0" name="exer-34" type="checkbox"
+                                            value="9"><label style="display: inline;"
+                                            for="34-9">&nbsp;CellIsFree.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="34">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="35">
+                                <p><b class="number">4</b> Когда используется цикл с предусловием?</p>
+                                <ul style="list-style-type:none;">
+                                    <li style="list-style-type: none;">
+
+                                        <input id="35-0" data-is-correct="0" name="exer-35" type="radio"
+                                            value="0"><label style="display: inline;" for="35-0">&nbsp;Если условие в
+                                            цикле будет всегда истинно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="35-1" data-is-correct="0" name="exer-35" type="radio"
+                                            value="1"><label style="display: inline;" for="35-1">&nbsp;Когда количество
+                                            повторений тела цикла заранее известно.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="35-2" data-is-correct="1" name="exer-35" type="radio"
+                                            value="2"><label style="display: inline;" for="35-2">&nbsp;Когда количество
+                                            повторений тела цикла заранее не известно, но известно условие продолжения
+                                            работы.</label>
+
+                                    </li>
+                                    <li style="list-style-type: none;">
+
+                                        <input id="35-3" data-is-correct="0" name="exer-35" type="radio"
+                                            value="3"><label style="display: inline;" for="35-3">&nbsp;Когда количество
+                                            повторений тела цикла заранее не известно, но известно условие окончания
+                                            работы.</label>
+
+                                    </li>
+                                </ul><button class="exer-check btn-custom exer-check-important"
+                                    data-id="35">Проверить</button>
+                            </div><br><br />
+                            <div class="exercise" data-id="36">
+                                <p><b class="number">5</b> В какой случае возникает ситуация зацикливания?</p>
+                                <ul style="list-style-type:none;"></ul><button
+                                    class="exer-check btn-custom exer-check-important" data-id="36">Проверить</button>
+                            </div><br><br />
+                        </div>
+                        <button class="toggle-slide button button-primary" id="9c468777c2">Упражнения</button>
+                        <div class="slide" id="9c468777c2" style="background-color: rgb(249, 249, 249);">
+
+                            <div class="exercises-wrapper">
+                                <ol>
+                                    <li style="list-style-type: none;"><b class="number-cirle">1</b> Для исполнителя
+                                        Робот был написан следующий алгоритм:</li>
+                                </ol>
+                                <p class="western" align="left">
+                                </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+                                <div id="crayon-646f6c724af70491376095"
+                                    class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate"
+                                    data-settings=" minimize scroll-mouseover"
+                                    style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                                    <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay"
+                                        style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                        <span class="crayon-title"></span>
+                                        <div class="crayon-tools"
+                                            style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;">
+                                            <div class="crayon-button crayon-nums-button" title="Toggle Line Numbers">
+                                                <div class="crayon-button-icon"></div>
+                                            </div>
+                                            <div class="crayon-button crayon-plain-button" title="Toggle Plain Code">
+                                                <div class="crayon-button-icon"></div>
+                                            </div>
+                                            <div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap">
+                                                <div class="crayon-button-icon"></div>
+                                            </div>
+                                            <div class="crayon-button crayon-expand-button" title="Expand Code">
+                                                <div class="crayon-button-icon"></div>
+                                            </div>
+                                            <div class="crayon-button crayon-copy-button" title="Copy">
+                                                <div class="crayon-button-icon"></div>
+                                            </div>
+                                            <div class="crayon-button crayon-popup-button"
+                                                title="Open Code In New Window">
+                                                <div class="crayon-button-icon"></div>
+                                            </div><span class="crayon-language">Delphi/Pascal</span>
+                                        </div>
+                                    </div>
+                                    <div class="crayon-info"
+                                        style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+                                    <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no"
+                                            data-settings="dblclick" readonly
+                                            style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+uses Robot; 
+begin 
+Field( , );
+while FreeFromRight do 
+begin
+paint;
+down;
+right;
+paint;
+up;
+right;
+end;</textarea></div>
+                                    <div class="crayon-main" style="">
+                                        <table class="crayon-table">
+                                            <tr class="crayon-row">
+                                                <td class="crayon-nums " data-settings="show">
+                                                    <div class="crayon-nums-content"
+                                                        style="font-size: 12px !important; line-height: 15px !important;">
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-1">1</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-2">2</div>
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-3">3</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-4">4</div>
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-5">5</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-6">6</div>
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-7">7</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-8">8</div>
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-9">9</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-10">10</div>
+                                                        <div class="crayon-num"
+                                                            data-line="crayon-646f6c724af70491376095-11">11</div>
+                                                        <div class="crayon-num crayon-striped-num"
+                                                            data-line="crayon-646f6c724af70491376095-12">12</div>
+                                                    </div>
+                                                </td>
+                                                <td class="crayon-code">
+                                                    <div class="crayon-pre"
+                                                        style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-1">
+                                                            <span class="crayon-r">uses</span><span class="crayon-h">
+                                                            </span><span class="crayon-v">Robot</span><span
+                                                                class="crayon-sy">;</span><span class="crayon-h">
+                                                            </span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-2"><span
+                                                                class="crayon-st">begin</span><span class="crayon-h">
+                                                            </span></div>
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-3">
+                                                            <span class="crayon-e">Field</span><span
+                                                                class="crayon-sy">(</span><span class="crayon-h">
+                                                            </span><span class="crayon-sy">,</span><span
+                                                                class="crayon-h"> </span><span
+                                                                class="crayon-sy">)</span><span
+                                                                class="crayon-sy">;</span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-4"><span
+                                                                class="crayon-st">while</span><span class="crayon-h">
+                                                            </span><span class="crayon-e">FreeFromRight </span><span
+                                                                class="crayon-st">do</span><span class="crayon-h">
+                                                            </span></div>
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-5">
+                                                            <span class="crayon-st">begin</span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-6"><span
+                                                                class="crayon-v">paint</span><span
+                                                                class="crayon-sy">;</span></div>
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-7">
+                                                            <span class="crayon-v">down</span><span
+                                                                class="crayon-sy">;</span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-8"><span
+                                                                class="crayon-v">right</span><span
+                                                                class="crayon-sy">;</span></div>
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-9">
+                                                            <span class="crayon-v">paint</span><span
+                                                                class="crayon-sy">;</span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-10"><span
+                                                                class="crayon-v">up</span><span
+                                                                class="crayon-sy">;</span></div>
+                                                        <div class="crayon-line" id="crayon-646f6c724af70491376095-11">
+                                                            <span class="crayon-v">right</span><span
+                                                                class="crayon-sy">;</span>
+                                                        </div>
+                                                        <div class="crayon-line crayon-striped-line"
+                                                            id="crayon-646f6c724af70491376095-12"><span
+                                                                class="crayon-st">end</span><span
+                                                                class="crayon-sy">;</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- [Format Time: 0.0011 seconds] -->
+                                <p>
+                                </p>
+                                <p class="western" align="left"><span lang="en-US"><b>end</b></span>.</p>
+                                <p>Нарисуйте в тетради результат работы алгоритма. Какими должны быть размеры поля,
+                                    чтобы Робот не врезался в стену? Определите начальное положение Робота<span
+                                        lang="en-US">.</span></p>
+                                <ol start="2">
+                                    <li style="list-style-type: none;"><b class="number-cirle">2</b> Напишите программу
+                                        для решения задач <span lang="en-US">w</span>3 и <span lang="en-US">w</span>8 из
+                                        встроенного задачника. Обращайте внимание на начальное и конечное положение
+                                        Робота.<br />
+                                        <table width="609" cellspacing="0" cellpadding="7">
+                                            <colgroup>
+                                                <col width="290" />
+                                                <col width="290" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <td width="290"> <img class="alignnone size-medium wp-image-696"
+                                                            src="img/141-300x234.jpg" alt="" width="300" height="234" />
+                                                    </td>
+                                                    <td width="290"> <img class="alignnone size-medium wp-image-697"
+                                                            src="img/142-300x234.jpg" alt="" width="300" height="234" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li style="list-style-type: none;"><b class="number-cirle">3</b>Составьте алгоритм,
+                                        выполнив который Робот нарисует «узор» из задания 1 вдоль левого края поля
+                                        исполнителя. Каким должен быть вертикальный размер поля исполнителя? (Задача
+                                        myrob5 из модуля <span lang="en-US">RobTasks</span>.)</li>
+                                    <li style="list-style-type: none;"><b class="number-cirle">4</b> Робот находится на
+                                        квадратном поле неизвестного размера. Начальное положение Робота — верхний левый
+                                        угол. Составьте и выполните алгоритм, по которому Робот переместится из
+                                        начального положения в нижний правый угол и закрасит все клетки своего пути. На
+                                        каком (на каких) из рисунков изображено решение этой задачи? Почему?</li>
+                                </ol>
+                                <table style="height: 24px;" width="947">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 308.008px;">a)<img
+                                                    class="alignnone size-medium wp-image-698"
+                                                    src="img/143_a-300x214.jpg" alt="" width="300" height="214" /></td>
+                                            <td style="width: 308.008px;">б)<img
+                                                    class="alignnone size-medium wp-image-699"
+                                                    src="img/143_б-300x214.jpg" alt="" width="300" height="214" /></td>
+                                            <td style="width: 309.258px;">в)<img
+                                                    class="alignnone size-medium wp-image-700"
+                                                    src="img/143_в-300x214.jpg" alt="" width="300" height="214" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ol start="5">
+                                    <li style="list-style-type: none;"><b class="number-cirle">5</b> На поле Робота
+                                        размещен «забор» — горизонтальная стена. Забор нужно «покрасить» — закрасить все
+                                        клетки сверху стены. В «заборе» могут быть одни «ворота» — клетка без линий.
+                                        Длина «забора» и расположение «ворот» не известны. (Задача myrob7 из модуля
+                                        <span lang="en-US">RobTasks</span>.)<img
+                                            class="alignnone size-medium wp-image-701" src="img/144-300x234.jpg" alt=""
+                                            width="300" height="234" /><img class="alignnone size-medium wp-image-702"
+                                            src="img/145-300x234.jpg" alt="" width="300" height="234" />
+                                    </li>
+                                    <li style="list-style-type: none;"><b class="number-cirle">6</b> По блок-схеме
+                                        запишите программу для исполнителя Робот. (Задача myrob8 из модуля <span
+                                            lang="en-US">RobTasks</span>.) Каким будет результат для каждой из
+                                        предложенных начальных обстановок?<br /><img
+                                            class="alignnone size-medium wp-image-703" src="img/146-138x300.jpg" alt=""
+                                            width="138" height="300" /><img class="alignnone size-medium wp-image-704"
+                                            src="img/147-300x234.jpg" alt="" width="300" height="234" /><img
+                                            class="alignnone size-medium wp-image-705" src="img/148-300x234.jpg" alt=""
+                                            width="300" height="234" /><img class="alignnone size-medium wp-image-706"
+                                            src="img/149-300x234.jpg" alt="" width="300" height="234" /></li>
+                                </ol>
+                                <p><b class="number-cirle">7*</b> Решите задачу <span lang="en-US">w</span>10 из
+                                    встроенного задачника. Напишите вспомогательный алгоритм для обхода одной стены.</p>
+                                <p><img class="alignnone size-medium wp-image-707" src="img/150-300x234.jpg" alt=""
+                                        width="300" height="234" />
+                            </div>
+                            <p>
+                        </div>
+                        <hr class="last-hr">
+                    </div><!-- end .entry-content -->
+
+
+                </div><!-- end #post-## -->
+                <div id="comments">
+
+
+                </div><!-- #comments -->
+
+
+            </div><!-- end .column-content -->
+
+
+
+            <div class="column column-narrow column-last">
+
+                <div id="custom_html-2" class="widget_text widget clearfix widget_custom_html">
+                    <div class="textwidget custom-html-widget"></div>
+                </div>
+            </div><!-- end .column-narrow -->
+
+
+
+
+
+
+        </div><!-- end #content -->
+
+
+
+        <div id="footer" class="clearfix">
+
+            <section class="site-widgetized-section">
+                <div class="widgets clearfix  widgets-1">
+
+                    <style type="text/css">
+                        .qtranxs_widget ul {
+                            margin: 0;
+                        }
+
+                        .qtranxs_widget ul li {
+                            display: inline;
+                            /* horizontal list, use "list-item" or other appropriate value for vertical list */
+                            list-style-type: none;
+                            /* use "initial" or other to enable bullets */
+                            margin: 0 5px 0 0;
+                            /* adjust spacing between items */
+                            opacity: 0.5;
+                            -o-transition: 1s ease opacity;
+                            -moz-transition: 1s ease opacity;
+                            -webkit-transition: 1s ease opacity;
+                            transition: 1s ease opacity;
+                        }
+
+                        /* .qtranxs_widget ul li span { margin: 0 5px 0 0; } */
+                        /* other way to control spacing */
+                        .qtranxs_widget ul li.active {
+                            opacity: 0.8;
+                        }
+
+                        .qtranxs_widget ul li:hover {
+                            opacity: 1;
+                        }
+
+                        .qtranxs_widget img {
+                            box-shadow: none;
+                            vertical-align: middle;
+                            display: initial;
+                        }
+
+                        .qtranxs_flag {
+                            height: 12px;
+                            width: 18px;
+                            display: block;
+                        }
+
+                        .qtranxs_flag_and_text {
+                            padding-left: 20px;
+                        }
+
+                        .qtranxs_flag span {
+                            display: none;
+                        }
+                    </style>
+                    <div id="qtranslate-2" class="widget clearfix qtranxs_widget">
+
+                        <div class="qtranxs_widget_end"></div>
+                    </div>
+                </div>
+            </section><!-- .site-widgetized-section -->
+
+
+            <p class="copy">
+
+            </p>
+        </div><!-- end #footer -->
+    </div><!-- end #wrap -->
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var JQLBSettings = { "fitToScreen": "0", "resizeSpeed": "400", "displayDownloadLink": "0", "navbarOnTop": "0", "loopImages": "", "resizeCenter": "", "marginSize": "0", "linkTarget": "", "help": "", "prevLinkTitle": "previous image", "nextLinkTitle": "next image", "prevLinkText": "\u00ab Previous", "nextLinkText": "Next \u00bb", "closeTitle": "close image gallery", "image": "Image ", "of": " of ", "download": "Download", "jqlb_overlay_opacity": "80", "jqlb_overlay_color": "#000000", "jqlb_overlay_close": "1", "jqlb_border_width": "10", "jqlb_border_color": "#ffffff", "jqlb_border_radius": "0", "jqlb_image_info_background_transparency": "100", "jqlb_image_info_bg_color": "#ffffff", "jqlb_image_info_text_color": "#000000", "jqlb_image_info_text_fontsize": "10", "jqlb_show_text_for_image": "1", "jqlb_next_image_title": "next image", "jqlb_previous_image_title": "previous image", "jqlb_next_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/next.gif", "jqlb_previous_button_image": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/prev.gif", "jqlb_maximum_width": "", "jqlb_maximum_height": "", "jqlb_show_close_button": "1", "jqlb_close_image_title": "close image gallery", "jqlb_close_image_max_heght": "22", "jqlb_image_for_close_lightbox": "http:\/\/informatika7.adu.by\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/ru_RU\/closelabel.gif", "jqlb_keyboard_navigation": "1", "jqlb_popup_size_fix": "0" };
+/* ]]> */
+    </script>
+    <script type='text/javascript' src='libs/form.js' defer></script>
+    <script type='text/javascript' src='libs/lightBox2.min.js' defer></script>
+    <script type='text/javascript' src='libs/jquerymenu.js' defer></script>
+    <script type='text/javascript' src='libs/superfish.js' defer></script>
+    <script type='text/javascript' src='libs/functions.js' defer></script>
+    <script type='text/javascript' src='libs/bootstrap.min.js' defer></script>
+    <script type='text/javascript' src='libs/wp-embed.js' defer></script>
+</body>
+
+</html>
